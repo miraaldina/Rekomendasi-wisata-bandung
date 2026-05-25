@@ -1,0 +1,332 @@
+Place_Id,Place_Name,Description,Category,City
+1,Alun-Alun Bandung,"Alun-alun pusat kota Bandung dengan taman rumput sintetis luas, area bersantai keluarga, dan ikon ruang publik perkotaan.",Taman Kota,Kota Bandung
+2,Gedung Sate,"Bangunan bersejarah peninggalan kolonial Belanda dengan arsitektur khas Indo-Eropa, kini menjadi kantor gubernur dan situs sejarah Kota Bandung.",Wisata Sejarah,Kota Bandung
+3,Jalan Braga,"Jalan bersejarah dengan deretan bangunan kolonial klasik, kafe heritage, dan galeri seni di pusat sejarah Kota Bandung.",Wisata Sejarah,Kota Bandung
+4,Trans Studio Bandung,"Taman hiburan indoor terbesar di Bandung dengan beragam wahana permainan, roller coaster, dan atraksi keluarga modern.",Taman Hiburan,Kota Bandung
+5,Saung Angklung Udjo,"Pusat budaya Sunda dengan pertunjukan angklung tradisional, seni musik bambu, dan edukasi budaya khas Jawa Barat.",Wisata Budaya,Kota Bandung
+6,Museum Geologi,"Museum edukasi yang menyimpan koleksi batuan, fosil purba, mineral, dan informasi sejarah geologi Indonesia.",Museum,Kota Bandung
+7,Museum Konferensi Asia Afrika,Museum sejarah yang mendokumentasikan Konferensi Asia Afrika 1955 dan perjuangan negara-negara Asia-Afrika.,Museum,Kota Bandung
+8,Taman Balai Kota,"Taman kota di area Balai Kota Bandung dengan fasilitas bermain anak, kolam ikan, dan ruang santai keluarga.",Taman Kota,Kota Bandung
+9,Taman Film,Taman tematik dengan layar videotron besar untuk menonton film bersama komunitas di pusat Kota Bandung.,Taman Kota,Kota Bandung
+10,Taman Lansia,"Taman hijau yang nyaman untuk olahraga ringan, jogging santai, dan rekreasi keluarga di pusat Kota Bandung.",Taman Kota,Kota Bandung
+11,Taman Jomblo,"Taman tematik unik dengan kursi-kursi tunggal di bawah jembatan layang Pasupati, populer sebagai spot foto.",Taman Kota,Kota Bandung
+12,Teras Cikapundung BBWS,"Wisata sungai dengan taman tepi sungai, jembatan, dan ruang publik di bantaran Sungai Cikapundung.",Wisata Alam,Kota Bandung
+13,Chinatown Bandung,"Kawasan budaya Tionghoa dengan kuliner khas, dekorasi lampion klasik, dan spot foto bertema oriental.",Wisata Budaya,Kota Bandung
+14,Bandung Planning Gallery,Galeri edukasi interaktif yang menampilkan sejarah perkembangan tata kota dan perencanaan masa depan Kota Bandung.,Wisata Edukasi,Kota Bandung
+15,Nu Art Studio,Galeri seni dan studio karya patung milik seniman Nyoman Nuarta dengan koleksi seni modern dan kontemporer.,Wisata Seni,Kota Bandung
+16,Amazing Artgames,"Tempat hiburan interaktif dengan wahana seni visual, permainan, dan spot foto kreatif modern.",Taman Hiburan,Kota Bandung
+17,Paris Van Java Resort Lifestyle Place,"Pusat perbelanjaan modern dengan konsep outdoor yang menyediakan tenant belanja, kuliner, hiburan, dan area rekreasi keluarga.",Pusat Perbelanjaan,Kota Bandung
+18,Paris Van Java Rooftop Garden,Area taman rooftop di Paris Van Java dengan ruang santai terbuka dan spot foto bertema pedesaan Eropa.,Taman Hiburan,Kota Bandung
+19,Cihampelas Walk,Pusat perbelanjaan dan hiburan dengan konsep semi-outdoor di kawasan Cihampelas untuk belanja dan kuliner.,Pusat Perbelanjaan,Kota Bandung
+20,Skywalk Cihampelas,Jalur pejalan kaki melayang di kawasan Cihampelas yang menjadi destinasi wisata kota sekaligus pusat jajanan kuliner.,Wisata Sejarah,Kota Bandung
+21,Pasar Baru Bandung,"Pasar pusat perbelanjaan terkenal di Bandung yang menyediakan produk fashion, tekstil, garmen, dan kuliner lokal.",Pusat Perbelanjaan,Kota Bandung
+22,ITC Kebon Kalapa,"Pusat perbelanjaan yang menawarkan kebutuhan fashion, elektronik, dan kuliner dengan harga terjangkau.",Pusat Perbelanjaan,Kota Bandung
+23,Bandung Indah Plaza,"Mall pusat perbelanjaan modern di Kota Bandung yang menyediakan tenant belanja, hiburan, dan restoran keluarga.",Pusat Perbelanjaan,Kota Bandung
+24,23 Paskal Shopping Center,Pusat perbelanjaan dan kuliner modern dengan konsep outdoor dan area nongkrong populer.,Pusat Perbelanjaan,Kota Bandung
+25,Braga Citywalk,Pusat perbelanjaan dan hiburan di kawasan bersejarah Braga dengan berbagai tenant fashion modern.,Pusat Perbelanjaan,Kota Bandung
+26,Festival Citylink,"Mall pusat perbelanjaan keluarga dengan fasilitas belanja, bioskop, hotel, dan pusat hiburan di Kota Bandung.",Pusat Perbelanjaan,Kota Bandung
+27,Kiara Artha Park,"Taman kota modern dengan kolam buatan, taman lampu warna-warni, area budaya, dan pertunjukan air mancur menari.",Taman Kota,Kota Bandung
+28,Babakan Siliwangi,Hutan kota di tengah Bandung dengan jalur pedestrian kayu dan suasana hutan tropis yang asri.,Wisata Alam,Kota Bandung
+29,Bandung Zoo,Kebun binatang dengan koleksi satwa beragam dan fasilitas edukasi satwa untuk anak dan keluarga.,Wisata Edukasi,Kota Bandung
+30,Karang Setra Waterpark,"Taman wahana air dengan berbagai kolam renang, seluncuran air, dan permainan air keluarga.",Taman Hiburan,Kota Bandung
+31,Lapangan Gasibu,"Ruang terbuka publik luas yang sering digunakan untuk olahraga, rekreasi, dan kegiatan masyarakat di pusat kota.",Taman Kota,Kota Bandung
+32,Stadion Gelora Bandung Lautan Api,Stadion olahraga sepak bola terbesar di Bandung yang menjadi markas Persib dan venue pertandingan olahraga besar.,Wisata Olahraga,Kota Bandung
+33,Taman Vanda,Taman kota kecil dengan kolam air mancur dan area duduk yang nyaman di pusat Kota Bandung.,Taman Kota,Kota Bandung
+34,Taman Merdeka,Taman publik kota dengan area hijau untuk bersantai dan beraktivitas warga di pusat kota.,Taman Kota,Kota Bandung
+35,Taman Citarum,"Taman kota tepi sungai dengan area bermain anak, jogging track, dan ruang santai keluarga.",Taman Kota,Kota Bandung
+36,Taman Veteran,Taman publik rindang yang cocok untuk rekreasi santai dan aktivitas keluarga warga Bandung.,Taman Kota,Kota Bandung
+37,Taman Sukajadi,Taman kota di kawasan Sukajadi yang dimanfaatkan untuk rekreasi dan ruang hijau warga sekitar.,Taman Kota,Kota Bandung
+38,Taman Antapani,Taman kota dengan fasilitas olahraga ringan dan area bermain anak di kawasan Antapani.,Taman Kota,Kota Bandung
+39,Taman Arcamanik,"Taman publik yang menyediakan area olahraga, jogging track, dan ruang hijau untuk warga sekitar.",Taman Kota,Kota Bandung
+40,Taman Gedebage,Taman kota di kawasan Gedebage yang digunakan sebagai area rekreasi dan aktivitas warga.,Taman Kota,Kota Bandung
+41,Taman Asia Afrika,Taman tematik di pusat Kota Bandung dengan dekorasi landmark negara Asia-Afrika dan area bersantai.,Taman Kota,Kota Bandung
+42,Jalan Asia Afrika,Jalan bersejarah yang menjadi pusat wisata heritage dan lokasi Konferensi Asia Afrika 1955.,Wisata Sejarah,Kota Bandung
+43,Gedung Merdeka,Gedung bersejarah tempat berlangsungnya Konferensi Asia Afrika 1955 yang kini menjadi museum sejarah.,Wisata Sejarah,Kota Bandung
+44,Masjid Raya Bandung,Masjid utama Kota Bandung dengan arsitektur modern dan menara observasi untuk melihat panorama kota.,Wisata Religi,Kota Bandung
+45,Museum Sri Baduga,"Museum budaya Jawa Barat yang menyimpan koleksi sejarah, artefak, seni, dan budaya Sunda.",Museum,Kota Bandung
+46,Museum Pos Indonesia,Museum yang menampilkan sejarah perkembangan layanan pos dan koleksi perangko Indonesia.,Museum,Kota Bandung
+47,Museum Barli,Museum seni yang menampilkan karya lukisan dan koleksi seni milik pelukis Barli Sasmitawinata.,Museum,Kota Bandung
+48,Museum Nike Ardilla,Museum yang menyimpan koleksi pribadi dan memorabilia penyanyi legendaris Nike Ardilla.,Museum,Kota Bandung
+49,Taman Musik Centrum,"Taman tematik yang sering digunakan untuk pertunjukan musik, komunitas seni, dan aktivitas kreatif.",Taman Kota,Kota Bandung
+50,Taman Fotografi,Taman publik bertema fotografi dengan mural dan spot foto favorit warga di Kota Bandung.,Taman Kota,Kota Bandung
+51,Taman Sejarah,Taman edukatif dengan kolam bermain anak dan informasi sejarah Kota Bandung untuk wisata keluarga.,Taman Kota,Kota Bandung
+52,Taman Tegalega,"Taman kota luas dengan area olahraga, ruang hijau, dan Monumen Bandung Lautan Api.",Taman Kota,Kota Bandung
+53,Monumen Bandung Lautan Api,Monumen bersejarah yang dibangun untuk mengenang peristiwa Bandung Lautan Api 1946.,Wisata Sejarah,Kota Bandung
+54,Gedung Indonesia Menggugat,Bangunan bersejarah tempat sidang Ir. Soekarno yang kini menjadi museum perjuangan nasional.,Wisata Sejarah,Kota Bandung
+55,Stadion Siliwangi,Stadion olahraga bersejarah di Bandung yang digunakan untuk pertandingan sepak bola dan kegiatan olahraga.,Wisata Olahraga,Kota Bandung
+56,Masjid Al Jabbar,Masjid modern dengan arsitektur megah dan area wisata religi yang menjadi ikon baru Jawa Barat.,Wisata Religi,Kota Bandung
+57,Alun-Alun Ujung Berung,Alun-alun ruang publik di kawasan Ujung Berung yang digunakan untuk rekreasi dan kegiatan masyarakat.,Taman Kota,Kota Bandung
+58,Alun-Alun Cicendo,"Alun-alun kota dengan area hijau, tempat bermain anak, dan fasilitas rekreasi keluarga.",Taman Kota,Kota Bandung
+59,Pasar Cihapit,Pasar kuliner tradisional terkenal di Bandung yang menyajikan jajanan khas dan makanan rumahan Sunda.,Wisata Kuliner,Kota Bandung
+60,Pasar Kosambi,Pasar kuliner tradisional populer yang menyediakan makanan khas Sunda dan jajanan lokal.,Wisata Kuliner,Kota Bandung
+61,Pasar Andir,"Pasar kuliner tradisional di Bandung yang menyediakan berbagai makanan, jajanan, dan kuliner lokal.",Wisata Kuliner,Kota Bandung
+62,Cibadak Food Street,"Kawasan kuliner malam dengan berbagai jajanan, makanan khas Bandung, dan street food modern.",Wisata Kuliner,Kota Bandung
+63,Paskal Hyper Square,Kawasan pusat perbelanjaan dan kuliner dengan restoran dan area nongkrong modern.,Pusat Perbelanjaan,Kota Bandung
+64,Kuliner Night Asia Afrika,Kawasan kuliner malam di sekitar Jalan Asia Afrika dengan berbagai jajanan dan suasana kota heritage.,Wisata Kuliner,Kota Bandung
+65,Sudirman Street Day and Night Market,Pusat kuliner street food modern dengan konsep pasar malam dan beragam pilihan makanan lokal serta internasional.,Wisata Kuliner,Kota Bandung
+66,Taman Saturnus,Taman kota dengan area hijau dan fasilitas santai untuk aktivitas warga sekitar.,Taman Kota,Kota Bandung
+67,SPORT Jabar Arcamanik,"Kawasan olahraga terpadu dengan fasilitas lapangan, kolam renang, dan area olahraga masyarakat.",Wisata Olahraga,Kota Bandung
+68,GOR Arcamanik,Gedung olahraga indoor yang digunakan untuk pertandingan dan kegiatan olahraga di Kota Bandung.,Wisata Olahraga,Kota Bandung
+69,GOR dan Taman Saparua,Area olahraga dan taman publik dengan fasilitas lapangan dan ruang aktivitas olahraga warga Bandung.,Wisata Olahraga,Kota Bandung
+70,Museum Mandala Wangsit Siliwangi,Museum perjuangan yang menyimpan koleksi sejarah militer dan perjuangan masyarakat Jawa Barat.,Museum,Kota Bandung
+71,Monumen Perjuangan Rakyat Jawa Barat,Monumen bersejarah yang dibangun untuk mengenang perjuangan rakyat Jawa Barat melawan penjajahan.,Wisata Sejarah,Kota Bandung
+72,Gedung Isola,Bangunan bersejarah berarsitektur kolonial yang kini menjadi ikon kampus UPI dan situs sejarah.,Wisata Sejarah,Kota Bandung
+73,Penjara Banceuy Bandung,Situs bersejarah yang pernah menjadi tempat penahanan Ir. Soekarno pada masa perjuangan kemerdekaan.,Wisata Sejarah,Kota Bandung
+74,Kebun Binatang Bandung,Kebun binatang dengan koleksi satwa beragam dan fasilitas edukasi satwa untuk keluarga.,Wisata Edukasi,Kota Bandung
+76,Masjid Salman ITB,Masjid kampus terkenal di Bandung yang menjadi pusat kegiatan keagamaan dan pendidikan Islam.,Wisata Religi,Kota Bandung
+77,Cibolang Hot Spring,Pemandian air panas alami dengan kolam berair hangat yang cocok untuk relaksasi dan terapi kesehatan.,Wisata Alam,Kota Bandung
+78,Taman Lalu Lintas Ade Irma Suryani Nasution,Taman edukasi lalu lintas dengan wahana bermain miniatur jalan raya dan pembelajaran keselamatan berkendara untuk anak.,Wisata Edukasi,Kota Bandung
+79,Curug Dago,Curug air terjun alami di kawasan Dago dengan nilai sejarah dan suasana hutan yang sejuk.,Wisata Alam,Kota Bandung
+80,Plaza Cikapundung River Spot,"Plaza ruang publik tepi sungai dengan area santai, tempat duduk, dan suasana alam di kawasan Cikapundung.",Taman Kota,Kota Bandung
+81,Taman Pustaka Bunga,Taman tematik dengan koleksi berbagai jenis bunga dan area hijau untuk rekreasi warga.,Taman Kota,Kota Bandung
+82,Taman Cikapayang Dago,Taman kota di kawasan Dago dengan ruang hijau dan area santai untuk pengunjung.,Taman Kota,Kota Bandung
+83,Margacinta Park,Taman publik dengan fasilitas olahraga ringan dan area rekreasi warga sekitar.,Taman Kota,Kota Bandung
+84,Peta Park,Taman kota dengan area bermain anak dan ruang terbuka hijau untuk aktivitas warga.,Taman Kota,Kota Bandung
+85,Taman Braga,Taman tematik di kawasan Braga yang menjadi tempat bersantai dan spot wisata kota.,Taman Kota,Kota Bandung
+86,Snow Park at Panama Park,Taman hiburan indoor bertema salju buatan dengan wahana permainan keluarga musim dingin.,Taman Hiburan,Kota Bandung
+87,Bandros (Bandung Tour on Bus),Layanan bus wisata kota yang mengajak wisatawan berkeliling ke berbagai destinasi heritage di Kota Bandung.,Wisata Sejarah,Kota Bandung
+88,Alun-Alun Regol,Alun-alun ruang publik di kawasan Regol yang digunakan untuk rekreasi dan aktivitas masyarakat.,Taman Kota,Kota Bandung
+89,Kampung Bamboo,"Tempat wisata keluarga dengan konsep saung bambu, kuliner Sunda, dan area santai bernuansa pedesaan.",Wisata Alam,Kota Bandung
+90,SKY TREE Coffee & Eatery,Tempat kuliner kafe dengan pemandangan kota dan area foto modern di Bandung.,Wisata Kuliner,Kota Bandung
+91,Kampung Korea Bandung,"Kawasan budaya bernuansa Korea dengan kuliner khas Korea, dekorasi hanok, dan spot foto bertema oriental.",Wisata Budaya,Kota Bandung
+92,Glamping Lakeside Rancabali,"Glamping mewah di tepi Situ Patenggang dengan tenda nyaman, fasilitas penginapan modern, dan panorama danau pegunungan.",Wisata Alam,Kabupaten Bandung
+93,Gunung Puntang,"Gunung wisata di Bandung Selatan untuk pendakian, hiking, dan camping dengan jalur trekking hutan dan situs sejarah radio Malabar.",Wisata Alam,Kabupaten Bandung
+94,Curug Cimahi,Curug air terjun tinggi setinggi 87 meter di kawasan Cisarua dengan pencahayaan warna-warni pada malam hari.,Wisata Alam,Kabupaten Bandung
+95,Curug Malela,Curug air terjun bertingkat lima undakan di Bandung Barat yang dijuluki Niagara Mini Indonesia.,Wisata Alam,Kabupaten Bandung
+96,Tebing Keraton,Tebing wisata alam dengan panorama hutan dan pemandangan matahari terbit di kawasan Dago Bandung.,Wisata Alam,Kabupaten Bandung
+97,Situ Cileunca,"Danau wisata di Pangalengan yang menawarkan aktivitas perahu dayung, rafting, dan area camping di tepi air.",Wisata Alam,Kabupaten Bandung
+98,Pemandian Air Panas Ciwidey,Pemandian air panas alami di Ciwidey dengan kolam berair hangat alami untuk relaksasi dan terapi kesehatan.,Wisata Alam,Kabupaten Bandung
+99,Barusen Hills,"Tempat wisata perbukitan di Ciwidey dengan taman bunga, kolam renang, dan area rekreasi keluarga.",Wisata Alam,Kabupaten Bandung
+100,Skyline Best View Resto,Restoran kuliner dengan panorama Kota Bandung dari ketinggian dan area foto outdoor modern.,Wisata Kuliner,Kabupaten Bandung
+101,Ranca Upas,Kawasan wisata camping ground luas dengan penangkaran rusa dan pemandian air panas di Ciwidey.,Wisata Alam,Kabupaten Bandung
+102,Grafika Cikole,Tempat wisata hutan pinus dan penginapan dengan area outbound serta aktivitas outdoor keluarga di Cikole Lembang.,Wisata Alam,Kabupaten Bandung
+103,Farmhouse Lembang,Taman hiburan keluarga bertema peternakan Eropa dengan spot foto rumah hobbit dan kuliner khas susu segar.,Taman Hiburan,Kabupaten Bandung
+104,Kawah Cibuni Rengganis,"Kawah belerang vulkanik dengan kawah aktif dan kawah kaldera, kolam kawah sumber air panas di Ciwidey.",Wisata Alam,Kabupaten Bandung
+105,The Lodge Maribaya,"Tempat wisata dengan wahana sky swing, hot air balloon, dan spot foto di hutan pinus Maribaya Lembang.",Wisata Alam,Kabupaten Bandung
+106,Maribaya Hot Spring,Pemandian air panas alami di Maribaya dengan fasilitas relaksasi dan kolam berair hangat berundak.,Wisata Alam,Kabupaten Bandung
+107,Lembah Tengkorak Base Camp Via Bukit Tunggul,Area pendakian dan camping ground dengan jalur trekking menuju puncak Bukit Tunggul.,Wisata Alam,Kabupaten Bandung
+108,Dago Pakar,"Kawasan wisata dataran tinggi di Bandung Utara dengan kuliner, suasana sejuk, dan pemandangan Kota Bandung dari atas.",Wisata Alam,Kabupaten Bandung
+109,Taman Hutan Raya Djuanda,"Taman hutan raya kawasan konservasi dengan jalur trekking, gua bersejarah, dan flora-fauna lindung di Bandung Utara.",Wisata Alam,Kabupaten Bandung
+110,Goa Jepang,Goa peninggalan tentara Jepang pada Perang Dunia II yang menjadi situs sejarah di Tahura Djuanda.,Wisata Sejarah,Kabupaten Bandung
+111,Goa Belanda,Goa bersejarah peninggalan kolonial Belanda yang berada di kawasan Tahura Djuanda Dago.,Wisata Sejarah,Kabupaten Bandung
+112,Situ Patengan,Danau wisata di Ciwidey dengan panorama perkebunan teh dan aktivitas perahu mengunjungi Pulau Asmara.,Wisata Alam,Kabupaten Bandung
+113,Stone Garden,Kawasan wisata batuan kapur purba dengan formasi batu unik dan spot foto bertema alam terbuka di Padalarang.,Wisata Alam,Kabupaten Bandung
+114,Puncak Bintang,Bukit wisata dengan area camping dan landmark bintang besar yang menyajikan panorama Kota Bandung dari ketinggian.,Wisata Alam,Kabupaten Bandung
+115,Bukit Moko,Bukit wisata populer untuk menikmati pemandangan lampu malam Kota Bandung dan suasana dataran tinggi.,Wisata Alam,Kabupaten Bandung
+116,Wisata Batu Kuda,Kawasan wisata hutan pinus dan camping di kaki Gunung Manglayang dengan udara sejuk pegunungan.,Wisata Alam,Kabupaten Bandung
+117,De Ranch Lembang,"Taman hiburan keluarga bertema koboi dengan wahana berkuda, area bermain anak, dan suasana ranch ala Amerika.",Taman Hiburan,Kabupaten Bandung
+118,Lembang Park Zoo,"Kebun binatang modern dengan koleksi satwa langka, wahana bermain, dan fasilitas edukasi untuk keluarga.",Wisata Edukasi,Kabupaten Bandung
+119,Taman Begonia,Taman bunga di Lembang dengan koleksi tanaman hias begonia warna-warni dan spot foto bertema taman.,Wisata Alam,Kabupaten Bandung
+120,Curug Omas,Curug air terjun di kawasan Maribaya dengan panorama hutan dan jalur trekking yang sejuk.,Wisata Alam,Kabupaten Bandung
+121,Curug Tilu,Curug air terjun alami dengan tiga undakan aliran air jernih di kawasan Bandung Barat.,Wisata Alam,Kabupaten Bandung
+122,Curug Panganten,Curug air terjun kembar dengan dua aliran air berdampingan dan suasana hutan yang asri.,Wisata Alam,Kabupaten Bandung
+123,Bukit Cukul Pangalengan,Bukit wisata dengan hamparan perkebunan teh dan spot menikmati matahari terbit di Pangalengan.,Wisata Alam,Kabupaten Bandung
+124,Gunung Wayang,"Gunung wisata di Pangalengan untuk pendakian, hiking, dan menikmati panorama puncak gunung.",Wisata Alam,Kabupaten Bandung
+125,Gunung Windu,Gunung wisata di Pangalengan dengan jalur pendakian dan area camping di puncak.,Wisata Alam,Kabupaten Bandung
+126,Situ Cisanti,Danau alami sumber mata air utama Sungai Citarum dengan suasana pegunungan yang tenang.,Wisata Alam,Kabupaten Bandung
+127,Kampung Singkur,Tempat wisata di tepi Sungai Palayangan dengan aktivitas arung jeram dan area camping di Pangalengan.,Wisata Alam,Kabupaten Bandung
+128,Sungai Palayangan,Sungai wisata terkenal untuk aktivitas arung jeram dan rafting di kawasan Pangalengan.,Wisata Alam,Kabupaten Bandung
+129,Kebun Teh Malabar,"Perkebunan teh luas dengan hamparan hijau, peninggalan kolonial Belanda, dan udara sejuk di Pangalengan.",Wisata Alam,Kabupaten Bandung
+130,Situ Cangkuang,Danau wisata dengan area rekreasi masyarakat dan suasana alam yang tenang.,Wisata Alam,Kabupaten Bandung
+131,Kampung Naga,Kampung adat Sunda yang mempertahankan budaya tradisional dan rumah panggung khas masyarakat Sunda.,Wisata Budaya,Kabupaten Bandung
+132,Curug Batu Templek,Curug air terjun unik dengan tebing batu berlapis seperti tumpukan lempengan di kawasan Cisanggarung.,Wisata Alam,Kabupaten Bandung
+133,Curug Cinulang,Curug air terjun alami di perbatasan Bandung dengan panorama hutan dan aliran air yang deras.,Wisata Alam,Kabupaten Bandung
+134,Curug Halimun,Curug air terjun dengan suasana hutan yang sejuk dan jalur trekking di kawasan Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+135,Curug Siliwangi,Curug air terjun alami dengan pemandangan hutan dan udara pegunungan yang segar.,Wisata Alam,Kabupaten Bandung
+136,Gunung Bukittunggul,"Gunung di Bandung Utara untuk pendakian, hiking, dan camping di puncak dengan panorama alam.",Wisata Alam,Kabupaten Bandung
+137,Curug Cilengkrang,Curug air terjun di Tahura Djuanda dengan kolam alami berair hangat dan jalur trekking pendek.,Wisata Alam,Kabupaten Bandung
+138,Curug Cipanji,Curug air terjun tinggi di Bandung Barat dengan panorama alam alami dan jalur trekking.,Wisata Alam,Kabupaten Bandung
+139,Gunung Malabar,Gunung di Bandung Selatan untuk pendakian dengan perkebunan teh di lerengnya.,Wisata Alam,Kabupaten Bandung
+140,Situ Cipanunjang,Danau alami di Pangalengan dengan panorama pegunungan dan udara sejuk pedesaan.,Wisata Alam,Kabupaten Bandung
+141,Situ Cileunca Camping,Area camping di tepi Situ Cileunca dengan panorama danau dan fasilitas wisata alam.,Wisata Alam,Kabupaten Bandung
+142,Rafting Pangalengan Bandung,Wisata arung jeram dengan jalur Sungai Palayangan yang menantang untuk aktivitas rafting outdoor.,Wisata Olahraga,Kabupaten Bandung
+143,Teras Danoe Official camping Site,Area camping di tepi danau dengan pemandangan air dan suasana pedesaan pegunungan.,Wisata Alam,Kabupaten Bandung
+144,Tepi Sungai Resto Pasirjambu,Restoran kuliner Sunda di tepi sungai dengan menu khas dan suasana pedesaan yang sejuk.,Wisata Kuliner,Kabupaten Bandung
+145,Hulu Mata Air Sungai Cisangkuy,Kawasan sumber mata air alami dengan air jernih dan lingkungan hutan yang asri.,Wisata Alam,Kabupaten Bandung
+146,Bandungrafting Basecamp,Basecamp arung jeram yang menyediakan aktivitas rafting dan petualangan outdoor di Bandung Selatan.,Wisata Olahraga,Kabupaten Bandung
+147,Rafting ciwidey (arung jeram),Wisata arung jeram di kawasan Ciwidey dengan aliran sungai menantang dan panorama alam.,Wisata Olahraga,Kabupaten Bandung
+148,Bale Bambu Adventure Resort,"Resort wisata alam dengan penginapan bambu, outbound, dan aktivitas outdoor keluarga.",Wisata Alam,Kabupaten Bandung
+149,Perkebunan Teh RANCABALI,"Perkebunan teh luas dengan hamparan hijau, udara pegunungan sejuk, dan kebun teh peninggalan kolonial.",Wisata Alam,Kabupaten Bandung
+150,Kebun Teh Pangalengan,Perkebunan teh luas di Pangalengan dengan hamparan hijau dan jalur wisata pemandangan.,Wisata Alam,Kabupaten Bandung
+151,Perkebunan Teh Purbasari,Perkebunan teh dengan suasana pedesaan dan pemandangan pegunungan yang asri di Pangalengan.,Wisata Alam,Kabupaten Bandung
+152,Sunrise Point Cukul,Spot menikmati matahari terbit dengan panorama perkebunan teh di Pangalengan.,Wisata Alam,Kabupaten Bandung
+153,Bukit Indah Gambung,Bukit wisata dengan pemandangan perkebunan teh dan suasana pedesaan pegunungan di Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+154,Bukit Jamur Rancabolang Pasirjambu,Bukit dengan pepohonan menyerupai jamur raksasa dan udara sejuk khas pegunungan.,Wisata Alam,Kabupaten Bandung
+155,Dermaga Bintang,Dermaga wisata tepi air dengan panorama perbukitan teh di kawasan Ciwidey Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+157,Taman Wisata Bougenville,"Taman bunga bougenville dengan koleksi warna-warni, penginapan, dan suasana pegunungan sejuk.",Wisata Alam,Kabupaten Bandung
+158,Teras Bintang,Spot wisata dengan area santai dan panorama pegunungan di Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+159,Bukit Teletubbies Cicalengka,Bukit hijau dengan kontur perbukitan menyerupai latar serial Teletubbies dan area foto unik.,Wisata Alam,Kabupaten Bandung
+160,Kedaton Bukit Panyawangan Pangalengan,Bukit wisata dengan area camping dan panorama perbukitan hijau di Pangalengan.,Wisata Alam,Kabupaten Bandung
+161,Taman Langit Pangalengan (Sunrise Point & Camping Ground),Taman spot camping dengan panorama matahari terbit dan pemandangan dataran tinggi di Pangalengan.,Wisata Alam,Kabupaten Bandung
+162,Bukit Eon,Bukit wisata dengan panorama alam terbuka dan area camping di Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+163,Nuansa Riung gunung Pangalengan,"Tempat wisata gunung dengan jembatan kayu, perkebunan teh, dan area glamping di kawasan Pangalengan.",Wisata Alam,Kabupaten Bandung
+165,Puncak Sulibra artapela,Bukit wisata dataran tinggi dengan panorama puncak gunung dan area camping di Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+166,Bukit Rahong,Bukit wisata dengan panorama hutan pinus dan area camping di kawasan Pangalengan.,Wisata Alam,Kabupaten Bandung
+167,NIMO Highland,"Tempat wisata modern di dataran tinggi dengan jembatan langit, spot foto, dan panorama Pangalengan.",Wisata Alam,Kabupaten Bandung
+169,Kebun Teh Kertamanah,Perkebunan teh dengan hamparan hijau luas dan udara sejuk di kawasan Pangalengan.,Wisata Alam,Kabupaten Bandung
+170,Situ Datar Buana,Danau wisata alami dengan suasana tenang dan panorama perbukitan sekitar.,Wisata Alam,Kabupaten Bandung
+172,Cileunca Land,Tempat wisata keluarga di sekitar Situ Cileunca dengan area camping dan aktivitas outdoor.,Wisata Alam,Kabupaten Bandung
+173,Tepian Langit Girang. TLG,Spot wisata dengan panorama perbukitan dan area santai di Pangalengan.,Wisata Alam,Kabupaten Bandung
+174,Wayang windu Panenjoan,Tempat wisata dengan jembatan kayu panjang dan panorama perkebunan teh di kawasan Wayang Windu.,Wisata Alam,Kabupaten Bandung
+176,Gunung Artapela,Gunung wisata di Bandung Selatan untuk pendakian dan camping di puncak.,Wisata Alam,Kabupaten Bandung
+177,Kebun Teh Riung Gunung,Perkebunan teh dengan jalur wisata gunung dan panorama dataran tinggi di Pangalengan.,Wisata Alam,Kabupaten Bandung
+178,Gunung Nini,Gunung bukit wisata dengan panorama perkebunan teh dan spot menikmati sunrise di Pangalengan.,Wisata Alam,Kabupaten Bandung
+179,Hutan Pinus Rahong,Hutan pinus dengan area camping dan aktivitas outdoor di kawasan Rahong.,Wisata Alam,Kabupaten Bandung
+180,Padaawas Hills Pengalengan Bandung,Tempat wisata dengan area camping dan pemandangan perbukitan hijau di Pangalengan.,Wisata Alam,Kabupaten Bandung
+181,Gravity Adventure,"Tempat wisata petualangan dengan aktivitas outdoor, paintball, dan permainan alam terbuka.",Wisata Olahraga,Kabupaten Bandung
+182,Lembah Pineus Rahong,"Tempat wisata dengan area glamping, sungai jernih, dan hutan pinus di kawasan Rahong.",Wisata Alam,Kabupaten Bandung
+183,Singkur Village,"Tempat wisata dengan konsep sungai, rafting, dan camping keluarga di Pangalengan.",Wisata Alam,Kabupaten Bandung
+184,Green Corner Camping Pangalengan,Area camping dengan panorama perkebunan teh dan suasana pedesaan yang sejuk.,Wisata Alam,Kabupaten Bandung
+185,Kiara Manuk,Tempat wisata dengan area camping dan panorama perbukitan di Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+186,Alam Singkur,"Tempat wisata di Pangalengan dengan rafting, camping, dan aktivitas outdoor keluarga.",Wisata Alam,Kabupaten Bandung
+187,Pesona padaawas,Tempat wisata petualangan dengan panorama perbukitan dan area camping di Bandung Selatan.,Wisata Olahraga,Kabupaten Bandung
+188,Taman hutan Pinus Wayang Windu,Taman hutan pinus wisata dengan suasana sejuk dan area rekreasi di kawasan Wayang Windu Pangalengan.,Wisata Alam,Kabupaten Bandung
+189,Batu Pineus Riverside,Tempat wisata di tepi sungai dengan area glamping dan suasana hutan pinus.,Wisata Alam,Kabupaten Bandung
+190,Kawah Wayang,"Kawah vulkanik di Pangalengan dengan kawah belerang aktif dan kawah kaldera, kawah panas bumi unik.",Wisata Alam,Kabupaten Bandung
+191,Pemandian Air Panas Cibolang,Pemandian air panas alami di Pangalengan dengan kolam berair hangat dan suasana pedesaan.,Wisata Alam,Kabupaten Bandung
+192,Teh Jangkung Malabar,Spot wisata perkebunan teh dengan pohon teh tertinggi dan panorama hijau khas Pangalengan.,Wisata Olahraga,Kabupaten Bandung
+193,Cabinite Pangalengan,Tempat glamping modern dengan pemandangan perkebunan teh dan suasana alam pegunungan.,Wisata Alam,Kabupaten Bandung
+194,Tea Plantation Observation Tower,Menara pandang di perkebunan teh untuk menikmati panorama hijau dari ketinggian.,Wisata Alam,Kabupaten Bandung
+195,Kampung Adat Cikondang,Kampung adat Sunda yang mempertahankan tradisi budaya dan rumah adat panggung tradisional.,Wisata Budaya,Kabupaten Bandung
+196,Makam Karomah Mahmud,Tempat ziarah religi dengan nilai sejarah dan budaya masyarakat setempat.,Wisata Religi,Kabupaten Bandung
+197,Kampung Adat Cirendeu,Kampung adat yang mempertahankan budaya lokal dan tradisi pangan singkong khas masyarakat Sunda.,Wisata Budaya,Kabupaten Bandung
+198,Desa Wisata Tarumajaya,Desa wisata dengan panorama pedesaan pegunungan dan aktivitas edukasi lingkungan di Bandung Selatan.,Desa Wisata,Kabupaten Bandung
+199,Cicalengka Dreamland,"Taman hiburan keluarga dengan area rekreasi, kolam renang, dan spot foto.",Taman Hiburan,Kabupaten Bandung
+200,Kawah Putih,"Kawah vulkanik dengan kawah belerang putih dan kawah kaldera ikonik, kawah aktif yang terkenal di Ciwidey.",Wisata Alam,Kabupaten Bandung
+201,Penangkaran Rusa Ranca Upas,Area konservasi rusa di Ranca Upas yang menjadi wisata edukasi satwa untuk keluarga.,Wisata Edukasi,Kabupaten Bandung
+202,Desa Wisata Alamendah,"Desa wisata dengan potensi alam, pertanian, dan edukasi budaya masyarakat lokal Sunda.",Desa Wisata,Kabupaten Bandung
+203,Warnasari Campvan,Tempat camping unik dengan konsep campervan dan panorama perkebunan teh di Bandung Selatan.,Wisata Alam,Kabupaten Bandung
+205,Curug Bentang Padjadjaran,Curug air terjun alami dengan panorama hutan dan suasana pegunungan yang sejuk.,Wisata Alam,Kabupaten Bandung
+206,Waduk Cirata,"Waduk besar yang dimanfaatkan untuk wisata alam, perikanan keramba, dan aktivitas rekreasi air.",Wisata Alam,Bandung Barat
+207,Bukit senyum,Bukit wisata dataran tinggi dengan panorama Waduk Saguling dan suasana alam terbuka.,Wisata Alam,Bandung Barat
+208,Taman Kupu-Kupu Cihanjuang,Taman edukasi dengan koleksi kupu-kupu hidup dan area pembelajaran lingkungan untuk anak.,Wisata Edukasi,Bandung Barat
+209,"Sapulidi Cafe, Resort & Gallery",Restoran kuliner Sunda bernuansa pedesaan dengan area danau dan saung tradisional.,Wisata Kuliner,Bandung Barat
+210,Tafso Barn,Restoran kuliner modern bertema barn dengan panorama alam dan spot foto kekinian.,Wisata Kuliner,Bandung Barat
+211,"Lereng Anteng, Dago Bakery",Tempat kuliner kafe dengan konsep outdoor serta pemandangan dataran tinggi Bandung.,Wisata Kuliner,Bandung Barat
+212,The Great Asia Africa,Taman hiburan tematik dengan miniatur budaya dan bangunan khas negara Asia-Afrika serta spot foto.,Taman Hiburan,Bandung Barat
+213,Bird Pavilion,Wisata edukasi dengan koleksi berbagai jenis burung dan area interaksi keluarga.,Wisata Edukasi,Bandung Barat
+214,Ciwangun Indah Camp,"Kawasan wisata alam dengan fasilitas camping, outbound, dan aktivitas outdoor di Bandung Barat.",Wisata Alam,Bandung Barat
+215,Lembah Bougenville Resort,"Resort wisata alam dengan taman bunga bougenville, penginapan, dan suasana pedesaan sejuk.",Wisata Alam,Bandung Barat
+216,Warung Liwet Ibu Yayah,Restoran kuliner khas Sunda terkenal dengan menu nasi liwet dan suasana pedesaan.,Wisata Kuliner,Bandung Barat
+217,Bosscha,Observatorium astronomi tertua di Indonesia untuk edukasi dan penelitian bintang serta benda langit.,Wisata Edukasi,Bandung Barat
+218,Fairy Garden Edutainment Park by The Lodge,Taman hiburan keluarga bertema negeri dongeng dengan wahana edukasi anak dan spot foto.,Taman Hiburan,Bandung Barat
+219,LEMBANG Wonderland,"Taman hiburan tematik dengan dekorasi unik, wahana keluarga, dan area foto interaktif.",Taman Hiburan,Bandung Barat
+220,MiniMania Lembang,Wisata edukasi miniatur landmark dunia dengan spot foto keluarga di Lembang.,Wisata Edukasi,Bandung Barat
+221,Trizara Resorts Glamping Lembang,Tempat glamping modern dengan tenda mewah dan panorama dataran tinggi Lembang.,Wisata Alam,Bandung Barat
+222,Pine Forest Camp,Area camping dengan suasana hutan pinus rapat dan udara sejuk di kawasan Lembang.,Wisata Alam,Bandung Barat
+223,Orchid Forest Cikole,"Hutan pinus dengan taman anggrek, jembatan gantung kayu, dan jalur wisata di Cikole.",Wisata Alam,Bandung Barat
+224,Gunung Putri Lembang,Gunung dengan jalur pendakian ringan dan panorama sunrise di kawasan Lembang.,Wisata Alam,Bandung Barat
+225,Wana Wisata Jayagiri,Kawasan wisata hutan pinus dan jalur trekking dengan area camping di Lembang.,Wisata Alam,Bandung Barat
+226,Curug Layung & Camping Ground,Curug air terjun alami dengan area camping dan suasana hutan pinus di kawasan Cisarua.,Wisata Alam,Bandung Barat
+227,Gunung Burangrang,"Gunung di Bandung Barat untuk pendakian, hiking, dan menikmati panorama puncak.",Wisata Alam,Bandung Barat
+228,Gunung Hawu,Gunung batu kapur dengan panorama tebing dan lokasi populer untuk olahraga panjat tebing.,Wisata Alam,Bandung Barat
+230,Curug Pelangi,Curug air terjun wisata dengan pencahayaan warna-warni pelangi pada malam hari di Lembang.,Wisata Alam,Bandung Barat
+231,Guha Pawon,Goa prasejarah di Padalarang yang memiliki nilai arkeologi dan jejak manusia purba.,Wisata Sejarah,Bandung Barat
+232,Lawangwangi Creative Space,Galeri seni dan kafe dengan panorama Kota Bandung dan area kreatif kontemporer.,Wisata Seni,Bandung Barat
+233,Dago Bakery punclut,Restoran kuliner dengan desain kastel Eropa dan panorama perbukitan di kawasan Punclut.,Wisata Kuliner,Bandung Barat
+234,Kawasan Punclut,Kawasan wisata dataran tinggi dengan kuliner dan panorama Kota Bandung dari atas.,Wisata Alam,Bandung Barat
+235,Waduk Saguling,"Waduk besar di Bandung Barat untuk wisata alam, perikanan, dan aktivitas rekreasi air.",Wisata Alam,Bandung Barat
+238,Curug Bugbrug,Curug air terjun alami dengan suasana hutan dan jalur trekking ringan di kawasan Cisarua.,Wisata Alam,Bandung Barat
+239,Curug Sawer Cililin,Curug air terjun di Bandung Barat dengan panorama hutan dan suasana pedesaan yang sejuk.,Wisata Alam,Bandung Barat
+240,Gn. Masigit,Gunung batu kapur di kawasan Citatah untuk pendakian dan olahraga panjat tebing.,Wisata Alam,Bandung Barat
+241,Basecamp Burangrang Via Legok Haji,Basecamp pendakian menuju puncak Gunung Burangrang dengan fasilitas camping dan jalur hiking.,Wisata Alam,Bandung Barat
+242,Curug Maribaya,Curug air terjun di Maribaya dengan udara sejuk dan panorama hutan tropis.,Wisata Alam,Bandung Barat
+244,Kota Mini Lembang,Wisata edukasi anak dengan konsep miniatur kota dan aktivitas roleplay profesi interaktif.,Wisata Edukasi,Bandung Barat
+246,Dusun Bambu Lembang,"Tempat wisata keluarga bernuansa alam dengan kuliner, penginapan, dan area rekreasi di hutan.",Wisata Alam,Bandung Barat
+247,Green Grass Cikole,"Tempat wisata dengan area camping, glamping, dan suasana hutan pinus di Cikole.",Wisata Alam,Bandung Barat
+248,Pine Valley Cikole,Kawasan wisata dengan panorama hutan pinus dan area camping keluarga di Cikole.,Wisata Alam,Bandung Barat
+249,Team Merpati Gunung Putri,Area wisata dan camping di Gunung Putri dengan panorama alam Lembang.,Wisata Alam,Bandung Barat
+250,Tugu Bukit Tunggul,Landmark di puncak Bukit Tunggul yang menjadi titik pendakian dan wisata alam.,Wisata Alam,Bandung Barat
+251,Bumi Perkemahan Taman Bincarung Pasir Angling,Taman bumi perkemahan dengan suasana hutan pinus dan fasilitas kegiatan outdoor keluarga di Bincarung.,Wisata Alam,Bandung Barat
+252,Rainbow Garden Lembang,Taman bunga warna-warni di Floating Market Lembang dengan berbagai spot foto menarik.,Wisata Alam,Bandung Barat
+253,Kebun Begonia Lembang,Taman bunga dengan koleksi tanaman hias begonia dan suasana pedesaan pegunungan.,Wisata Alam,Bandung Barat
+254,Kampung Daun Culture Gallery & Café,Restoran kuliner Sunda bernuansa pedesaan dengan saung tradisional di kawasan hutan.,Wisata Kuliner,Bandung Barat
+255,Dago Dreampark,"Taman hiburan keluarga dengan wahana permainan, spot foto, dan aktivitas outdoor.",Taman Hiburan,Bandung Barat
+257,Sanghyang Heuleut,Telaga alami di Rajamandala dengan air biru jernih dan formasi batuan purba.,Wisata Alam,Bandung Barat
+258,Taman Lembah DEWATA,"Taman wisata lembah dengan area danau, aktivitas berkuda, dan area santai keluarga di Bandung Barat.",Wisata Alam,Bandung Barat
+259,Jendela Alam,Wisata edukasi pertanian dan peternakan untuk anak-anak dan keluarga di Lembang.,Wisata Edukasi,Bandung Barat
+260,Bukit Strawberry Berbunga,Bukit kebun stroberi wisata dengan area petik buah dan panorama dataran tinggi pegunungan.,Wisata Alam,Bandung Barat
+261,La Fresa Farm (Wisata Petik Strawberry),Wisata edukasi petik stroberi dengan suasana kebun dan aktivitas pertanian untuk keluarga.,Wisata Edukasi,Bandung Barat
+262,Cikole Jayagiri Resort,Resort dengan penginapan dan area outdoor di hutan pinus Cikole Lembang.,Wisata Alam,Bandung Barat
+263,Tebing Citatah 125,Tebing batu kapur di Citatah untuk olahraga panjat tebing dan wisata alam.,Wisata Alam,Bandung Barat
+264,Pemandian Air Panas Nagrak Tengah,Pemandian air panas alami dengan kolam berair hangat di kawasan pedesaan Bandung Barat.,Wisata Alam,Bandung Barat
+265,Pemandian Air Panas Cipanas,Pemandian air panas dengan fasilitas rekreasi keluarga dan kolam berair hangat di Bandung Barat.,Wisata Alam,Bandung Barat
+266,Sanghyang Kenit,Tempat wisata aliran sungai dan tebing batu di kawasan Rajamandala Bandung Barat.,Wisata Alam,Bandung Barat
+267,Floating Market Lembang,Wisata kuliner dengan konsep pasar terapung di tepi danau Lembang dengan beragam jajanan lokal.,Wisata Kuliner,Bandung Barat
+268,Curug Cipanas,Curug air terjun alami di kawasan sumber air panas dengan panorama pegunungan.,Wisata Alam,Bandung Barat
+269,Curug Aseupan,Curug air terjun alami dengan suasana hutan dan jalur trekking di Bandung Barat.,Wisata Alam,Bandung Barat
+270,Air Terjun Marbella,Air terjun alami dengan panorama hutan pegunungan yang asri.,Wisata Alam,Bandung Barat
+271,Stone Garden Citatah,Kawasan batuan purba dengan formasi batu kapur unik dan spot foto di Citatah Bandung Barat.,Wisata Alam,Bandung Barat
+273,Benteng Jayagiri,Situs sejarah peninggalan kolonial di kawasan Lembang dengan nilai arkeologi.,Wisata Sejarah,Bandung Barat
+274,Lorong Lumut,Jalur wisata alam dengan tebing batu berlumut hijau yang unik di kawasan Bandung Barat.,Wisata Alam,Bandung Barat
+275,Tangkal Pinus Jayagiri Lembang,Area wisata hutan pinus dengan fasilitas camping dan aktivitas outdoor keluarga.,Wisata Alam,Bandung Barat
+277,Talaga Land,Tempat wisata dengan area danau dan fasilitas rekreasi keluarga di Bandung Barat.,Wisata Alam,Bandung Barat
+278,Water Coaster - Dusun Bambu,Wahana permainan air dengan konsep roller coaster di kawasan Dusun Bambu Lembang.,Taman Hiburan,Bandung Barat
+279,Kamanja Adventure Land,Taman wisata petualangan dengan wahana outdoor dan aktivitas rekreasi keluarga.,Wisata Olahraga,Bandung Barat
+280,Noah's Park,Taman hiburan keluarga dengan wahana permainan dan spot foto modern.,Taman Hiburan,Bandung Barat
+281,Kampung Gajah Park & Zoo,Taman wisata keluarga dengan wahana permainan dan area edukasi satwa.,Taman Hiburan,Bandung Barat
+282,Vila Air Natural Resort,Resort dengan penginapan dan suasana pedesaan pegunungan yang sejuk.,Wisata Alam,Bandung Barat
+283,Sendang Geulis Kahuripan,Pemandian mata air alami dengan air jernih dan suasana hutan di Bandung Barat.,Wisata Alam,Bandung Barat
+284,Situ Ciburuy,Danau wisata di Padalarang dengan area rekreasi perahu dan panorama alam.,Wisata Alam,Bandung Barat
+285,Sanghyang Tikoro,Wisata aliran sungai bawah tebing batu dengan nilai geologi unik di Bandung Barat.,Wisata Alam,Bandung Barat
+287,Gunung Tangkuban Perahu,Gunung berapi aktif di Lembang dengan panorama puncak gunung dan jalur pendakian wisata.,Wisata Alam,Bandung Barat
+289,Taman Maluku,Taman kota bersejarah dengan pohon rindang dan suasana tenang di kawasan elite Bandung.,Taman Kota,Kota Bandung
+290,Taman Pramuka,Taman publik dengan area olahraga dan ruang terbuka hijau untuk warga Kota Bandung.,Taman Kota,Kota Bandung
+291,Taman Cibeunying,Taman kota dengan kolam dan area bermain anak di kawasan Cibeunying Bandung.,Taman Kota,Kota Bandung
+292,Taman Cilaki,Taman kecil di pinggir jalan dengan kursi taman dan suasana santai di Bandung.,Taman Kota,Kota Bandung
+293,Taman Centrum,Taman ruang terbuka hijau dengan pohon besar dan area duduk publik di tengah Kota Bandung.,Taman Kota,Kota Bandung
+294,Taman Dewi Sartika,Taman publik di area Balai Kota dengan patung Dewi Sartika dan area bermain anak.,Taman Kota,Kota Bandung
+295,Museum Pendidikan Nasional,Museum edukasi yang menampilkan sejarah perkembangan pendidikan di Indonesia.,Museum,Kota Bandung
+296,Museum Kota Bandung,Museum yang menyimpan koleksi sejarah perkembangan Kota Bandung dari masa ke masa.,Museum,Kota Bandung
+297,Museum NuArt Sculpture Park,Museum galeri patung dan taman seni karya Nyoman Nuarta dengan koleksi seni kontemporer.,Wisata Seni,Kota Bandung
+298,Selasar Sunaryo Art Space,Galeri seni kontemporer dengan ruang pameran arsitektur unik dan kafe seni di Bandung.,Wisata Seni,Kota Bandung
+299,Museum Asia Afrika,Museum sejarah Konferensi Asia Afrika dengan koleksi dokumentasi diplomasi internasional.,Museum,Kota Bandung
+300,Vihara Dharma Ramsi,Vihara bersejarah dengan arsitektur khas Tionghoa dan area ibadah umat Buddha.,Wisata Religi,Kota Bandung
+301,Gereja Katedral Bandung,Gereja Katolik bersejarah dengan arsitektur neo-gotik di pusat Kota Bandung.,Wisata Religi,Kota Bandung
+302,Pasar Cikapundung,Pasar tradisional pusat penjualan elektronik dan barang antik di Kota Bandung.,Pusat Perbelanjaan,Kota Bandung
+303,Pasar Gedebage,Pasar grosir pusat perbelanjaan tekstil dan pakaian terbesar di Bandung dengan harga terjangkau.,Pusat Perbelanjaan,Kota Bandung
+304,Trans Studio Mall Bandung,Pusat perbelanjaan terintegrasi dengan taman hiburan Trans Studio dan beragam tenant.,Pusat Perbelanjaan,Kota Bandung
+305,Miko Mall,"Mall pusat perbelanjaan keluarga dengan fasilitas belanja, kuliner, dan bioskop di Bandung selatan.",Pusat Perbelanjaan,Kota Bandung
+306,Bandung Electronic Center,Pusat perbelanjaan elektronik dan gadget terlengkap di Kota Bandung.,Pusat Perbelanjaan,Kota Bandung
+307,Istana Plaza,"Mall pusat perbelanjaan keluarga dengan beragam tenant fashion, kuliner, dan hiburan di kawasan Pasteur.",Pusat Perbelanjaan,Kota Bandung
+308,Metro Indah Mall,Pusat perbelanjaan modern dengan area kuliner dan hiburan keluarga di Bandung.,Pusat Perbelanjaan,Kota Bandung
+310,Caringin Tilu,Bukit dengan pemandangan Kota Bandung dari ketinggian dan area camping populer.,Wisata Alam,Kota Bandung
+311,Dago Tea House,Restoran kuliner dengan pemandangan Kota Bandung di kawasan Dago atas.,Wisata Kuliner,Kota Bandung
+313,Rumah Mode Factory Outlet,Factory outlet pusat perbelanjaan legendaris dengan beragam pakaian merek lokal dan internasional di Bandung.,Pusat Perbelanjaan,Kota Bandung
+314,Heritage Factory Outlet,Factory outlet pusat perbelanjaan dengan koleksi pakaian dan aksesoris berkualitas di kawasan Riau Bandung.,Pusat Perbelanjaan,Kota Bandung
+315,Stamp Festival Bandung,Acara wisata budaya tahunan dengan pameran perangko dan hiburan keluarga.,Wisata Budaya,Kota Bandung
+316,Cibaduyut,Sentra industri sepatu kulit terbesar di Bandung dengan beragam toko dan workshop pengrajin.,Pusat Perbelanjaan,Kota Bandung
+317,Sentra Rajut Binong Jati,Pusat industri rajutan Bandung dengan beragam toko sweater dan pakaian rajut.,Pusat Perbelanjaan,Kota Bandung
+318,Sentra Boneka Sukamulya,Kampung pengrajin boneka dengan beragam toko mainan dan boneka khas Bandung.,Pusat Perbelanjaan,Kota Bandung
+320,Kebun Strawberry Ciwidey,Kebun stroberi wisata dengan area petik buah langsung dari pohon dan suasana pegunungan.,Wisata Alam,Kabupaten Bandung
+322,Pemandian Air Panas Walini,Pemandian air panas alami dengan kolam pemandian di tengah perkebunan teh Walini.,Wisata Alam,Kabupaten Bandung
+323,Kawah Cibuni,"Kawah vulkanik belerang dengan kawah aktif dan kawah kaldera di Ciwidey, kawah pemandian air panas.",Wisata Alam,Kabupaten Bandung
+324,Makam Bosscha Pangalengan,Makam bersejarah pemilik perkebunan teh Malabar di tengah kebun teh Pangalengan.,Wisata Sejarah,Kabupaten Bandung
+325,Curug Sindulang,Curug air terjun tinggi dengan kolam alami di kawasan Cicalengka Kabupaten Bandung.,Wisata Alam,Kabupaten Bandung
+326,Curug Citambur,Curug air terjun tinggi spektakuler dengan tiga tingkatan di kawasan Cianjur Bandung.,Wisata Alam,Kabupaten Bandung
+327,Gunung Patuha,Gunung tidak aktif dengan jalur pendakian dan hutan tropis di kawasan Ciwidey.,Wisata Alam,Kabupaten Bandung
+328,Bukit Jamur Rancaupas,Bukit dengan formasi batuan unik berbentuk jamur dan area camping di Ciwidey.,Wisata Alam,Kabupaten Bandung
+329,Pinus Rahong Cikondang,Hutan pinus dengan area camping dan jalur trekking di Pangalengan Bandung.,Wisata Alam,Kabupaten Bandung
+330,Glamping Legok Kondang,Penginapan glamping dengan pemandangan hutan pinus dan suasana alam Ciwidey.,Wisata Alam,Kabupaten Bandung
+331,Kampung Mahmud,Perkampungan religi bersejarah dengan tradisi Islam khas di Kabupaten Bandung.,Desa Wisata,Kabupaten Bandung
+332,Masjid Atta'awun Puncak,Masjid dengan arsitektur unik dan pemandangan pegunungan di kawasan Puncak Bandung.,Wisata Religi,Kabupaten Bandung
+333,Wisata Religi Cibiru,Kawasan wisata religi dengan masjid bersejarah dan area ziarah di Cibiru Bandung.,Wisata Religi,Kabupaten Bandung
+334,Wisata Sungai Cikapundung Maribaya,Wisata sungai dengan jalur trekking dan curug kecil di kawasan Maribaya.,Wisata Alam,Kabupaten Bandung
+335,Outbound Cikole,Area outbound petualangan dengan beragam wahana di hutan pinus Cikole Lembang.,Wisata Olahraga,Kabupaten Bandung
+336,Paintball Lembang,Arena paintball outdoor dengan berbagai medan permainan di kawasan Lembang.,Wisata Olahraga,Kabupaten Bandung
+337,Trizara Resorts,Penginapan glamping mewah dengan pemandangan pegunungan di kawasan Lembang.,Wisata Alam,Kabupaten Bandung
+338,Dusun Bambu Family Leisure Park,"Taman hiburan keluarga dengan tema bambu, danau, dan beragam wahana di Lembang.",Taman Hiburan,Kabupaten Bandung
+341,Sari Ater Hot Spring,Pemandian air panas alami dengan beragam kolam hangat dan fasilitas resort di kawasan Subang Lembang.,Wisata Alam,Bandung Barat
+345,Gunung Batu Lembang,Gunung batu Lembang dengan jalur pendakian singkat dan pemandangan dari ketinggian.,Wisata Alam,Bandung Barat
+347,Bandung Treetop Adventure Park,Taman petualangan di atas pohon dengan flying fox dan jembatan tali di Cikole.,Wisata Olahraga,Bandung Barat
+349,Lereng Anteng,Restoran kuliner dengan pemandangan pegunungan dan suasana alam Lembang Bandung Barat.,Wisata Kuliner,Bandung Barat
+351,Imah Seniman,Resor budaya dengan tema seni dan budaya Sunda di kawasan Lembang Bandung Barat.,Wisata Budaya,Bandung Barat
+352,Bumi Sangkuriang,Taman hiburan wisata dengan kolam renang dan area rekreasi keluarga di Bandung Barat.,Taman Hiburan,Bandung Barat
+353,Sindang Reret Cikole,Resor dan restoran kuliner khas Sunda dengan kolam ikan di kawasan Cikole Lembang.,Wisata Kuliner,Bandung Barat
+354,D'Dieuland Bandung,Taman hiburan wisata dengan beragam wahana dan tema fantasi di Dago Pakar Bandung Barat.,Taman Hiburan,Bandung Barat
+355,Wot Batu,Galeri seni batu karya Sunaryo dengan filosofi alam di kawasan Dago Bandung Barat.,Wisata Seni,Bandung Barat
+356,Boscha Junior Hill Park,Taman wisata bertema astronomi dengan wahana edukasi anak di kawasan Lembang Bandung Barat.,Wisata Edukasi,Bandung Barat
+357,Pulosari Adventure,"Wisata petualangan dengan paintball, ATV, dan outbound di kawasan Bandung Barat.",Wisata Olahraga,Bandung Barat
+358,Saung Daweung Resort,Resor dengan saung tradisional dan pemandangan pegunungan di Bandung Barat.,Wisata Alam,Bandung Barat
+359,Sanghyang Poek,Goa dan jeram sungai dengan jalur trekking eksotik di kawasan Saguling Bandung Barat.,Wisata Alam,Bandung Barat
+360,Bumi Perkemahan Cikole,Area camping luas dengan fasilitas lengkap di tengah hutan pinus Lembang.,Wisata Alam,Bandung Barat
