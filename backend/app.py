@@ -30,7 +30,8 @@ CORS(app)
 # ============================================================
 # LOAD MODEL & DATA
 # ============================================================
-MODEL_DIR = os.path.join(os.path.dirname(__file__), '..', 'model')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, '..', 'machineLearning', 'model')
 
 print("Memuat model...")
 
