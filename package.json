@@ -1,0 +1,13 @@
+{
+  "name": "skripsi_wisata_bandung",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "python backend/app.py",
+    "frontend": "npm --prefix frontend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
