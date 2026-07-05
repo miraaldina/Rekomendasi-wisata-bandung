@@ -1,117 +1,226 @@
-# UPDATE: Dataset Bersih Tanpa Duplikat (331 Destinasi)
+# Parahyangan — Sistem Rekomendasi Destinasi Wisata Bandung Raya
 
-Anda berhasil menghapus 46 duplikat dari dataset! Dataset sekarang dari 377 jadi **331 destinasi unik**.
+Aplikasi web rekomendasi destinasi wisata di kawasan Bandung Raya (Kota Bandung, Kabupaten Bandung, Bandung Barat) yang dibangun sebagai tugas akhir Program Studi Teknik Informatika, Universitas Islam Nusantara (2026).
 
-## Apa yang Berubah
+Sistem menggunakan pendekatan **Content-Based Filtering** dengan pembobotan **TF-IDF** dan pengukuran kemiripan **Cosine Similarity** pada deskripsi destinasi berbahasa Indonesia (dengan pipeline preprocessing Sastrawi: *case folding → cleaning → tokenization → stopword removal → stemming*).
 
-✅ Dataset clean (377 → 331 destinasi)
-✅ ML model di-train ulang (TF-IDF + Cosine Similarity) berdasarkan dataset yang sudah bersih
-✅ Backend Flask tidak perlu diubah (otomatis pakai model baru)
+---
 
-**Catatan:** Place_Id **tidak** direset berurutan — ID asli (1–377) tetap dipakai untuk destinasi yang bertahan, jadi setelah 46 destinasi dihapus akan ada celah nomor (Place_Id tertinggi yang tersisa adalah 360, bukan 331). Ini tidak masalah karena baik backend maupun frontend mengambil data berdasarkan Place_Id yang ada, bukan mengasumsikan urutan berurutan.
+## Fitur Utama
 
-## Cara Apply (Penting - Ikuti Berurutan!)
+- **Pencarian berdasarkan tempat** pilih satu destinasi, sistem menampilkan destinasi lain yang paling mirip (berdasarkan deskripsi).
+- **Pencarian berdasarkan cerita bebas** pengguna menulis apa yang diinginkan (mis. *"tempat sejuk dengan pemandangan pegunungan"*), sistem mencocokkan ke destinasi paling relevan.
+- **Filter wilayah dan kategori** yang bisa dikombinasikan dengan kedua mode pencarian di atas.
+- **Halaman detail** dengan rekomendasi destinasi serupa.
+- **Katalog lengkap** semua destinasi dengan filter interaktif.
 
-### LANGKAH 1: Stop Server
+---
 
-Di terminal yang menjalankan `npm run dev`, tekan **Ctrl+C** (ini akan menghentikan backend dan frontend sekaligus, karena keduanya dijalankan lewat `concurrently`).
-
-### LANGKAH 2: Replace Dataset
-
-Buka folder: `C:\Users\HP\Documents\UNINUS\skripsi_wisata_bandung\machineLearning\data\`
-
-**Replace** file `dataset_wisata_clean.csv` dengan yang ada di folder `machineLearning/data/` dari zip ini.
-
-### LANGKAH 3: Replace Model Files
-
-Buka folder: `C:\Users\HP\Documents\UNINUS\skripsi_wisata_bandung\machineLearning\model\`
-
-**Replace** keempat file berikut dari folder `machineLearning/model/` di zip:
-- `tfidf_vectorizer.pkl`
-- `tfidf_matrix.pkl`
-- `cosine_sim_matrix.pkl`
-- `dataset_processed.pkl`
-
-### LANGKAH 4: Jalankan Ulang
-
-Dari root folder project (`C:\Users\HP\Documents\UNINUS\skripsi_wisata_bandung`), jalankan:
+## Arsitektur
 
 ```
+┌─────────────────┐      HTTP/JSON      ┌──────────────────┐
+│  React Frontend │ ◄─────────────────► │   Flask Backend  │
+│  (port 3000)    │                     │   (port 5000)    │
+└─────────────────┘                     └────────┬─────────┘
+                                                 │ load pkl
+                                                 ▼
+                                        ┌──────────────────┐
+                                        │  Model TF-IDF +  │
+                                        │  Cosine Matrix   │
+                                        │  (331 destinasi) │
+                                        └──────────────────┘
+```
+
+---
+
+## Stack Teknologi
+
+**Backend**
+- Python 3, Flask 3, Flask-CORS
+- scikit-learn (TF-IDF, Cosine Similarity)
+- Sastrawi (stemming & stopwords Bahasa Indonesia)
+
+**Frontend**
+- React 18, React Router 6
+- Framer Motion (animasi & transisi halaman)
+- Tailwind CSS
+
+**Data & ML**
+- Jupyter Notebook untuk preprocessing, training, dan evaluasi
+- Model tersimpan sebagai file `.pkl` yang dimuat backend saat startup
+
+---
+
+## Struktur Folder
+
+```
+skripsi_wisata_bandung/
+├── backend/
+│   └── app.py                              # Server Flask + endpoint REST
+├── frontend/
+│   ├── public/
+│   │   └── images/destinations/            # Foto tiap destinasi
+│   └── src/
+│       ├── pages/                          # HomePage, DestinasiPage, DetailPage, TentangPage
+│       ├── components/                     # Header, Footer
+│       ├── card/DestinationCard.js         # Kartu destinasi (dipakai di beberapa halaman)
+│       └── utils/                          # motion.js (preset animasi), utils.js (API + PHOTO_MAP)
+├── machineLearning/
+│   ├── data/
+│   │   ├── dataset_wisata_clean.csv        # Dataset final (331 destinasi)
+│   │   └── dataset_preprocessed.csv        # Dataset mentah sebelum dibersihkan
+│   ├── notebook/
+│   │   └── 01_preprocessing_modeling.ipynb # Notebook end-to-end: preprocessing → training → evaluasi → visualisasi
+│   ├── model/                              # Artefak model (.pkl) yang dimuat backend
+│   ├── output/                             # Hasil evaluasi (Precision@K, MAP) dalam format .xlsx
+│   ├── docs/                               # Grafik untuk laporan BAB IV
+│   └── requirements.txt
+├── package.json                            # Script `npm run dev` untuk jalankan backend + frontend sekaligus
+└── README.md
+```
+
+---
+
+## Prasyarat
+
+- **Node.js** ≥ 18 (untuk frontend + `concurrently`)
+- **Python** ≥ 3.10
+- **pip** untuk install dependency Python
+
+---
+
+## Instalasi (Pertama Kali)
+
+Dari root folder project, jalankan berurutan:
+
+```bash
+# 1. Install Python dependencies
+pip install -r machineLearning/requirements.txt
+
+# 2. Install dependencies script npm run dev di root
+npm install
+
+# 3. Install dependencies frontend
+cd frontend
+npm install
+cd ..
+```
+
+---
+
+## Menjalankan Aplikasi
+
+Dari root folder project:
+
+```bash
 npm run dev
 ```
 
-Perintah ini otomatis menjalankan backend (`python backend/app.py`) dan frontend (`npm --prefix frontend start`) sekaligus lewat `concurrently`.
+Perintah ini menjalankan **backend dan frontend sekaligus** lewat `concurrently`. Tunggu sampai muncul indikator siap:
 
-Tunggu sampai muncul (biasanya di log dengan prefix `[0]`, yaitu proses backend):
+- Log berprefix `[0]` (backend):
+  ```
+  Model berhasil dimuat! (331 destinasi)
+   * Running on http://localhost:5000
+  ```
+- Log berprefix `[1]` (frontend):
+  ```
+  Compiled successfully!
+  Local: http://localhost:3000
+  ```
+
+Buka browser di **http://localhost:3000**.
+
+Untuk menghentikan keduanya sekaligus, tekan **Ctrl+C** di terminal yang sama.
+
+---
+
+## API Endpoints (Backend)
+
+Semua endpoint diekspos di `http://localhost:5000`.
+
+| Method | Endpoint | Deskripsi |
+|--------|----------|-----------|
+| GET | `/` | Info API & jumlah destinasi |
+| GET | `/api/destinations` | Daftar semua destinasi |
+| GET | `/api/categories` | Daftar kategori wisata |
+| GET | `/api/cities` | Daftar wilayah |
+| POST | `/api/recommendations` | Rekomendasi berdasarkan nama destinasi |
+| POST | `/api/recommendations-by-text` | Rekomendasi berdasarkan query teks bebas |
+
+**Contoh body request** untuk `/api/recommendations-by-text`:
+```json
+{
+  "query": "tempat sejuk dengan pemandangan gunung",
+  "city": "Bandung Barat",
+  "category": "Wisata Alam",
+  "top_n": 5
+}
 ```
-Model berhasil dimuat! (331 destinasi)
+
+---
+
+## Menjalankan Ulang Training (Opsional)
+
+Jika Anda mengubah `dataset_wisata_clean.csv`, latih ulang model dengan menjalankan notebook:
+
+```
+machineLearning/notebook/01_preprocessing_modeling.ipynb
 ```
 
-dan log dengan prefix `[1]` (proses frontend) menampilkan `Compiled successfully!` serta alamat `http://localhost:3000`.
+Klik **Run All** — notebook akan otomatis:
+1. Memuat dataset
+2. Menjalankan text preprocessing (Sastrawi)
+3. Menghitung matriks TF-IDF & Cosine Similarity
+4. Menyimpan artefak `.pkl` ke `machineLearning/model/`
+5. Menghitung Precision@5, Precision@10, dan MAP (disimpan ke `machineLearning/output/`)
+6. Menghasilkan grafik untuk laporan skripsi (disimpan ke `machineLearning/docs/`)
 
-## Verifikasi
+Setelah itu **restart** `npm run dev` supaya backend memuat model yang baru.
 
-Setelah jalan, buka browser di `localhost:3000`. Cek:
-- ✅ Halaman beranda / daftar destinasi menampilkan **331 destinasi ditemukan** (bukan 377 lagi)
-- ✅ Cari "Situ Patenggang" → tidak ada lagi (yang ada hanya "Situ Patengan")
-- ✅ Cari "Tangkuban Perahu" → cuma "Gunung Tangkuban Perahu" yang tersisa
-- ✅ Klik destinasi → foto muncul dengan benar
+---
 
-**Catatan tentang foto:** `PHOTO_MAP` di `frontend/src/utils/utils.js` saat ini masih menyimpan 361 entri (termasuk 41 entri lama untuk destinasi yang sudah dihapus dari dataset). Ini tidak menyebabkan error — entri yang tidak lagi punya pasangan destinasi hanya menjadi mubazir/tidak terpakai — tapi kalau mau benar-benar rapi, entri untuk Place_Id yang sudah dihapus (lihat daftar di bawah) bisa ikut dibersihkan dari `PHOTO_MAP`.
+## Dataset
 
-## Daftar 46 Destinasi yang Dihapus
+Dataset final berisi **331 destinasi unik** dari 3 wilayah Bandung Raya, hasil pembersihan dari dataset awal 377 destinasi (46 entri duplikat/tumpang tindih dihapus).
 
-| Place_Id | Nama |
-|---|---|
-| 75 | Taman Sejarah Bandung |
-| 82 | Taman Balai Kota Bandung |
-| 140 | Curug Penganten (duplikat Curug Panganten) |
-| 158 | Bukit Moko Bandung |
-| 166 | Cukul Campsite |
-| 170 | Cukul Atas |
-| 173 | Situ Cileunca Pangalengan Bandung |
-| 177 | Wayang Windu Village |
-| 193 | Situ Cileunca Lake |
-| 204 | Taman Hutan Raya Ir. H. Djuanda |
-| 205 | Situ Patenggang (duplikat Situ Patengan) |
-| 209 | Curug Batu Templek Cisanggarung |
-| 234 | Curug Tilu Leuwi Opat |
-| 241 | Maribaya Natural Hotspring Resort |
-| 242 | Terminal Wisata Grafika Cikole |
-| 248 | Farm House Susu Lembang |
-| 250 | Float Market Lembang, West Bandung, West Java |
-| 261 | Tebing Karaton |
-| 277 | Foresto Jayagiri Lembang |
-| 281 | Jungle Milk Jayagiri |
-| 291 | Lembang Park & Zoo |
-| 293 | Sanghyang Poek Bandung Purba |
-| 294 | Taman Lalu Lintas Ade Irma Suryani |
-| 301 | Taman Foto |
-| 316 | Punclut |
-| 319 | Saung Udjo Heritage |
-| 326 | Kawah Putih Ciwidey |
-| 328 | Pemandian Air Panas Cimanggu |
-| 330 | Kawah Rengganis |
-| 331 | Kebun Teh Rancabali |
-| 348 | Farmhouse Susu Lembang |
-| 349 | Kampung Gajah Wonderland |
-| 350 | Tangkuban Perahu (duplikat Gunung Tangkuban Perahu) |
-| 352 | Curug Layung |
-| 353 | Curug Omas Maribaya |
-| 354 | Maribaya Natural Hot Spring |
-| 355 | Stone Garden Padalarang |
-| 356 | Goa Pawon (duplikat Guha Pawon) |
-| 358 | Observatorium Bosscha |
-| 359 | Kampung Daun Culture Gallery |
-| 360 | Lembang Park and Zoo (duplikat Lembang Park & Zoo) |
-| 362 | Terminal Wisata Grafika |
-| 363 | Punclut Bandung Barat |
-| 365 | Sapu Lidi Resort |
-| 376 | Kampung Cai Ranca Upas |
-| 377 | Bandung Adventure Park |
+Sebaran per wilayah:
+- Kabupaten Bandung: 126 destinasi
+- Kota Bandung: 118 destinasi
+- Bandung Barat: 87 destinasi
 
-## Catatan untuk Skripsi
+Sebaran per kategori teratas: Wisata Alam (157), Taman Kota (36), Pusat Perbelanjaan (21), Wisata Kuliner (19), Taman Hiburan (18).
 
-Di BAB IV (Hasil dan Pembahasan) bagian "Pengumpulan Data", Anda bisa tulis:
+> **Catatan tentang Place_Id:** karena entri duplikat dihapus tanpa penomoran ulang, `Place_Id` di dataset final **tidak berurutan** (max = 360, bukan 331) ada celah nomor untuk ID yang dihapus. Backend dan frontend tidak bergantung pada urutan berurutan, jadi ini aman.
 
-> "Setelah proses pengumpulan, dataset awal terdiri dari 377 destinasi. Setelah dilakukan proses pembersihan data (data cleaning) dengan mengidentifikasi entri duplikat berdasarkan kemiripan nama menggunakan algoritma fuzzy string matching, ditemukan 46 entri duplikat dan tidak relevan yang merepresentasikan destinasi yang sama dengan penulisan berbeda (misalnya 'Situ Patengan' dan 'Situ Patenggang') maupun entri yang tumpang tindih dengan destinasi lain. Setelah penghapusan, dataset final yang digunakan untuk pelatihan model adalah **331 destinasi unik**."
+---
+
+## Hasil Evaluasi
+
+Evaluasi dilakukan pada 5 query uji dengan metrik Precision@5, Precision@10, dan Mean Average Precision (MAP). Hasil lengkap tersimpan di `machineLearning/output/hasil_precision_map.xlsx`.
+
+**Ringkasan:** MAP mencapai **98,5%** pada 5 query pengujian (`museum`, `pemandian air panas`, `alun-alun`, `curug`, `taman kota`).
+
+Detail hasil top-10 rekomendasi per query untuk lampiran skripsi tersimpan di `machineLearning/output/detail_top10_rekomendasi_dan_relevansi.xlsx`.
+
+---
+
+## Troubleshooting
+
+**`'react-scripts' is not recognized`** dependencies frontend belum ter-install. Jalankan `cd frontend && npm install`.
+
+**Backend gagal load model (`FileNotFoundError`)** — pastikan folder `machineLearning/model/` berisi keempat file `.pkl`. Kalau belum ada, jalankan notebook untuk generate ulang.
+
+**Halaman utama menampilkan `0 destinasi ditemukan`** — backend belum jalan atau belum siap. Cek log terminal, pastikan `Model berhasil dimuat! (331 destinasi)` sudah muncul.
+
+**Foto destinasi tidak muncul** pastikan folder `frontend/public/images/destinations/` berisi file gambar yang direferensikan di `frontend/src/utils/utils.js` (`PHOTO_MAP`).
+
+---
+
+## Penulis
+
+**Mira Aldina**
+NIM 41037006221007
+Teknik Informatika — Universitas Islam Nusantara
+2026
