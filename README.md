@@ -1,155 +1,107 @@
-# Parahyangan — Sistem Rekomendasi Destinasi Wisata Bandung Raya
+# Parahyangan
 
-Aplikasi web rekomendasi destinasi wisata di kawasan Bandung Raya (Kota Bandung, Kabupaten Bandung, Bandung Barat) yang dibangun sebagai tugas akhir Program Studi Teknik Informatika, Universitas Islam Nusantara (2026).
+Sistem rekomendasi destinasi wisata Bandung Raya. Dibuat untuk tugas akhir Teknik Informatika, Universitas Islam Nusantara.
 
-Sistem menggunakan pendekatan **Content-Based Filtering** dengan pembobotan **TF-IDF** dan pengukuran kemiripan **Cosine Similarity** pada deskripsi destinasi berbahasa Indonesia (dengan pipeline preprocessing Sastrawi: *case folding → cleaning → tokenization → stopword removal → stemming*).
+Aplikasi ini membantu pengguna menemukan tempat wisata yang cocok bisa dengan memilih destinasi favorit lalu mencari yang mirip, atau menuliskan apa yang diinginkan dalam bahasa bebas seperti *"tempat sejuk dengan pemandangan gunung"*.
 
----
+Metode yang dipakai: Content-Based Filtering dengan TF-IDF dan Cosine Similarity pada deskripsi destinasi berbahasa Indonesia. Preprocessing teks pakai Sastrawi (case folding, cleaning, tokenization, stopword removal, stemming).
 
-## Fitur Utama
+## Cakupan
 
-- **Pencarian berdasarkan tempat** pilih satu destinasi, sistem menampilkan destinasi lain yang paling mirip (berdasarkan deskripsi).
-- **Pencarian berdasarkan cerita bebas** pengguna menulis apa yang diinginkan (mis. *"tempat sejuk dengan pemandangan pegunungan"*), sistem mencocokkan ke destinasi paling relevan.
-- **Filter wilayah dan kategori** yang bisa dikombinasikan dengan kedua mode pencarian di atas.
-- **Halaman detail** dengan rekomendasi destinasi serupa.
-- **Katalog lengkap** semua destinasi dengan filter interaktif.
+Dataset final berisi 331 destinasi di 3 wilayah:
 
----
+- Kabupaten Bandung — 126 destinasi
+- Kota Bandung — 118 destinasi
+- Bandung Barat — 87 destinasi
 
-## Arsitektur
+Kategori terbanyak adalah Wisata Alam (157), disusul Taman Kota (36), Pusat Perbelanjaan (21), Wisata Kuliner (19), dan Taman Hiburan (18).
 
-```
-┌─────────────────┐      HTTP/JSON      ┌──────────────────┐
-│  React Frontend │ ◄─────────────────► │   Flask Backend  │
-│  (port 3000)    │                     │   (port 5000)    │
-└─────────────────┘                     └────────┬─────────┘
-                                                 │ load pkl
-                                                 ▼
-                                        ┌──────────────────┐
-                                        │  Model TF-IDF +  │
-                                        │  Cosine Matrix   │
-                                        │  (331 destinasi) │
-                                        └──────────────────┘
-```
+Dataset ini dibersihkan dari 377 entri awal. 46 entri duplikat/tumpang tindih dihapus (misal "Situ Patengan" dan "Situ Patenggang" yang sebenarnya tempat yang sama).
 
----
+## Stack
 
-## Stack Teknologi
+Backend pakai Flask + scikit-learn + Sastrawi. Frontend pakai React 18, React Router, Framer Motion, dan Tailwind CSS. Model TF-IDF dan matriks Cosine Similarity disimpan sebagai file `.pkl` yang dimuat backend saat startup.
 
-**Backend**
-- Python 3, Flask 3, Flask-CORS
-- scikit-learn (TF-IDF, Cosine Similarity)
-- Sastrawi (stemming & stopwords Bahasa Indonesia)
-
-**Frontend**
-- React 18, React Router 6
-- Framer Motion (animasi & transisi halaman)
-- Tailwind CSS
-
-**Data & ML**
-- Jupyter Notebook untuk preprocessing, training, dan evaluasi
-- Model tersimpan sebagai file `.pkl` yang dimuat backend saat startup
-
----
-
-## Struktur Folder
+## Struktur folder
 
 ```
 skripsi_wisata_bandung/
 ├── backend/
-│   └── app.py                              # Server Flask + endpoint REST
+│   └── app.py                              
 ├── frontend/
-│   ├── public/
-│   │   └── images/destinations/            # Foto tiap destinasi
+│   ├── public/images/destinations/         
 │   └── src/
-│       ├── pages/                          # HomePage, DestinasiPage, DetailPage, TentangPage
-│       ├── components/                     # Header, Footer
-│       ├── card/DestinationCard.js         # Kartu destinasi (dipakai di beberapa halaman)
-│       └── utils/                          # motion.js (preset animasi), utils.js (API + PHOTO_MAP)
+│       ├── pages/                          
+│       ├── components/                     
+│       ├── card/DestinationCard.js
+│       └── utils/                          
 ├── machineLearning/
 │   ├── data/
-│   │   ├── dataset_wisata_clean.csv        # Dataset final (331 destinasi)
-│   │   └── dataset_preprocessed.csv        # Dataset mentah sebelum dibersihkan
+│   │   ├── dataset_wisata_clean.csv        
+│   │   └── dataset_preprocessed.csv        
 │   ├── notebook/
-│   │   └── 01_preprocessing_modeling.ipynb # Notebook end-to-end: preprocessing → training → evaluasi → visualisasi
-│   ├── model/                              # Artefak model (.pkl) yang dimuat backend
-│   ├── output/                             # Hasil evaluasi (Precision@K, MAP) dalam format .xlsx
-│   ├── docs/                               # Grafik untuk laporan BAB IV
+│   │   └── 01_preprocessing_modeling.ipynb 
+│   ├── model/                              
+│   ├── output/                             
+│   ├── docs/                               
 │   └── requirements.txt
-├── package.json                            # Script `npm run dev` untuk jalankan backend + frontend sekaligus
+├── package.json                            
 └── README.md
 ```
 
----
-
 ## Prasyarat
 
-- **Node.js** ≥ 18 (untuk frontend + `concurrently`)
-- **Python** ≥ 3.10
-- **pip** untuk install dependency Python
+- Python 3.10 atau lebih baru
+- Node.js 18 atau lebih baru
 
----
+## Instalasi
 
-## Instalasi (Pertama Kali)
-
-Dari root folder project, jalankan berurutan:
+Pertama kali clone repo ini, dari root folder jalankan:
 
 ```bash
-# 1. Install Python dependencies
 pip install -r machineLearning/requirements.txt
-
-# 2. Install dependencies script npm run dev di root
 npm install
-
-# 3. Install dependencies frontend
-cd frontend
-npm install
-cd ..
+cd frontend && npm install && cd ..
 ```
 
----
+## Menjalankan
 
-## Menjalankan Aplikasi
-
-Dari root folder project:
+Dari root folder:
 
 ```bash
 npm run dev
 ```
 
-Perintah ini menjalankan **backend dan frontend sekaligus** lewat `concurrently`. Tunggu sampai muncul indikator siap:
+Perintah ini menyalakan backend dan frontend sekaligus. Tunggu sampai muncul dua indikator ini di terminal:
 
-- Log berprefix `[0]` (backend):
+- Backend (log berprefix `[0]`):
   ```
   Model berhasil dimuat! (331 destinasi)
    * Running on http://localhost:5000
   ```
-- Log berprefix `[1]` (frontend):
+- Frontend (log berprefix `[1]`):
   ```
   Compiled successfully!
   Local: http://localhost:3000
   ```
 
-Buka browser di **http://localhost:3000**.
+Buka browser ke http://localhost:3000. Untuk berhenti, tekan Ctrl+C di terminal yang sama.
 
-Untuk menghentikan keduanya sekaligus, tekan **Ctrl+C** di terminal yang sama.
+## API
 
----
+Endpoint tersedia di `http://localhost:5000`:
 
-## API Endpoints (Backend)
-
-Semua endpoint diekspos di `http://localhost:5000`.
-
-| Method | Endpoint | Deskripsi |
-|--------|----------|-----------|
-| GET | `/` | Info API & jumlah destinasi |
-| GET | `/api/destinations` | Daftar semua destinasi |
-| GET | `/api/categories` | Daftar kategori wisata |
+| Method | Endpoint | Kegunaan |
+|--------|----------|----------|
+| GET | `/` | Info API |
+| GET | `/api/destinations` | Semua destinasi |
+| GET | `/api/categories` | Daftar kategori |
 | GET | `/api/cities` | Daftar wilayah |
-| POST | `/api/recommendations` | Rekomendasi berdasarkan nama destinasi |
-| POST | `/api/recommendations-by-text` | Rekomendasi berdasarkan query teks bebas |
+| POST | `/api/recommendations` | Rekomendasi berdasar nama destinasi |
+| POST | `/api/recommendations-by-text` | Rekomendasi berdasar query teks bebas |
 
-**Contoh body request** untuk `/api/recommendations-by-text`:
+Contoh body untuk `/api/recommendations-by-text`:
+
 ```json
 {
   "query": "tempat sejuk dengan pemandangan gunung",
@@ -159,68 +111,39 @@ Semua endpoint diekspos di `http://localhost:5000`.
 }
 ```
 
----
+## Melatih ulang model
 
-## Menjalankan Ulang Training (Opsional)
+Kalau dataset diubah, jalankan notebook `machineLearning/notebook/01_preprocessing_modeling.ipynb` lalu Run All. Notebook akan:
 
-Jika Anda mengubah `dataset_wisata_clean.csv`, latih ulang model dengan menjalankan notebook:
-
-```
-machineLearning/notebook/01_preprocessing_modeling.ipynb
-```
-
-Klik **Run All** — notebook akan otomatis:
 1. Memuat dataset
-2. Menjalankan text preprocessing (Sastrawi)
-3. Menghitung matriks TF-IDF & Cosine Similarity
-4. Menyimpan artefak `.pkl` ke `machineLearning/model/`
-5. Menghitung Precision@5, Precision@10, dan MAP (disimpan ke `machineLearning/output/`)
-6. Menghasilkan grafik untuk laporan skripsi (disimpan ke `machineLearning/docs/`)
+2. Menjalankan preprocessing (Sastrawi)
+3. Menghitung matriks TF-IDF dan Cosine Similarity
+4. Menyimpan model ke `machineLearning/model/`
+5. Menghitung Precision@5, Precision@10, dan MAP → `machineLearning/output/`
+6. Membuat grafik untuk laporan → `machineLearning/docs/`
 
-Setelah itu **restart** `npm run dev` supaya backend memuat model yang baru.
+Setelah selesai, restart `npm run dev` supaya backend memuat model baru.
 
----
+## Hasil evaluasi
 
-## Dataset
+Model diuji pakai 5 query: `museum`, `pemandian air panas`, `alun-alun`, `curug`, dan `taman kota`. Nilai Mean Average Precision (MAP) yang diperoleh adalah 98,5%. Detail perhitungannya ada di `machineLearning/output/hasil_precision_map.xlsx`, dan detail top-10 rekomendasi per query ada di file `detail_top10_rekomendasi_dan_relevansi.xlsx`.
 
-Dataset final berisi **331 destinasi unik** dari 3 wilayah Bandung Raya, hasil pembersihan dari dataset awal 377 destinasi (46 entri duplikat/tumpang tindih dihapus).
+## Catatan
 
-Sebaran per wilayah:
-- Kabupaten Bandung: 126 destinasi
-- Kota Bandung: 118 destinasi
-- Bandung Barat: 87 destinasi
-
-Sebaran per kategori teratas: Wisata Alam (157), Taman Kota (36), Pusat Perbelanjaan (21), Wisata Kuliner (19), Taman Hiburan (18).
-
-> **Catatan tentang Place_Id:** karena entri duplikat dihapus tanpa penomoran ulang, `Place_Id` di dataset final **tidak berurutan** (max = 360, bukan 331) ada celah nomor untuk ID yang dihapus. Backend dan frontend tidak bergantung pada urutan berurutan, jadi ini aman.
-
----
-
-## Hasil Evaluasi
-
-Evaluasi dilakukan pada 5 query uji dengan metrik Precision@5, Precision@10, dan Mean Average Precision (MAP). Hasil lengkap tersimpan di `machineLearning/output/hasil_precision_map.xlsx`.
-
-**Ringkasan:** MAP mencapai **98,5%** pada 5 query pengujian (`museum`, `pemandian air panas`, `alun-alun`, `curug`, `taman kota`).
-
-Detail hasil top-10 rekomendasi per query untuk lampiran skripsi tersimpan di `machineLearning/output/detail_top10_rekomendasi_dan_relevansi.xlsx`.
-
----
+`Place_Id` di dataset final tidak berurutan karena entri yang dihapus tidak diganti nomornya. Nilai maksimumnya 360, bukan 331. Ini tidak masalah karena backend dan frontend hanya melihat ID mana yang ada, bukan urutan.
 
 ## Troubleshooting
 
-**`'react-scripts' is not recognized`** dependencies frontend belum ter-install. Jalankan `cd frontend && npm install`.
+**`'react-scripts' is not recognized`** dependency frontend belum ter-install. Jalankan `cd frontend && npm install`.
 
-**Backend gagal load model (`FileNotFoundError`)** — pastikan folder `machineLearning/model/` berisi keempat file `.pkl`. Kalau belum ada, jalankan notebook untuk generate ulang.
+**Backend gagal load model** cek apakah folder `machineLearning/model/` berisi keempat file `.pkl`. Kalau belum, jalankan notebook.
 
-**Halaman utama menampilkan `0 destinasi ditemukan`** — backend belum jalan atau belum siap. Cek log terminal, pastikan `Model berhasil dimuat! (331 destinasi)` sudah muncul.
+**Halaman menampilkan `0 destinasi ditemukan`** backend belum siap. Cek log terminal, pastikan `Model berhasil dimuat!` sudah muncul.
 
-**Foto destinasi tidak muncul** pastikan folder `frontend/public/images/destinations/` berisi file gambar yang direferensikan di `frontend/src/utils/utils.js` (`PHOTO_MAP`).
-
----
+**Foto destinasi tidak muncul** cek apakah file yang direferensikan di `PHOTO_MAP` (di `frontend/src/utils/utils.js`) benar ada di folder `frontend/public/images/destinations/`.
 
 ## Penulis
 
-**Mira Aldina**
+Mira Aldina
 NIM 41037006221007
-Teknik Informatika — Universitas Islam Nusantara
-2026
+Teknik Informatika — Universitas Islam Nusantara, 2026
