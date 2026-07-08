@@ -110,13 +110,13 @@ function HomePage({ destinations, categories, cities }) {
       {/* HERO */}
       <section className="relative min-h-screen">
 
-        {/* Background Video — gradasi hijau di belakang sebagai fallback,
+        {/* Background Video — gradasi biru di belakang sebagai fallback,
             supaya kalau video belum sempat termuat (mis. baru saja
             mount ulang setelah pindah halaman), yang terlihat tetap
             enak dipandang, bukan kotak abu-abu polos */}
         <div
           className="absolute inset-0 z-0 overflow-hidden"
-          style={{ background: 'linear-gradient(160deg, #2d4a37, #16241c)' }}
+          style={{ background: 'linear-gradient(160deg, #6f6b67, #322f2c)' }}
         >
           {HERO_VIDEOS.map((src, i) => (
             <video
@@ -174,7 +174,7 @@ function HomePage({ destinations, categories, cities }) {
                   onClick={() => { setSearchMode('place'); setError(''); }}
                   whileTap={tapScale}
                   className={`relative rounded-full px-5 py-2.5 text-sm font-medium transition-colors duration-300 sm:px-6 ${
-                    searchMode === 'place' ? 'text-[#1f3329]' : 'text-white/75 hover:text-white'
+                    searchMode === 'place' ? 'text-[#4a4745]' : 'text-white/75 hover:text-white'
                   }`}
                 >
                   {searchMode === 'place' && (
@@ -194,7 +194,7 @@ function HomePage({ destinations, categories, cities }) {
                   onClick={() => { setSearchMode('text'); setError(''); }}
                   whileTap={tapScale}
                   className={`relative rounded-full px-5 py-2.5 text-sm font-medium transition-colors duration-300 sm:px-6 ${
-                    searchMode === 'text' ? 'text-[#1f3329]' : 'text-white/75 hover:text-white'
+                    searchMode === 'text' ? 'text-[#4a4745]' : 'text-white/75 hover:text-white'
                   }`}
                 >
                   {searchMode === 'text' && (
@@ -301,7 +301,7 @@ function HomePage({ destinations, categories, cities }) {
                               transition={{ duration: 0.2 }}
                             >
                               <button
-                                className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${!cityFilter ? 'font-semibold text-[#1f3329]' : 'text-[#2d322d]'}`}
+                                className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${!cityFilter ? 'font-semibold text-[#4a4745]' : 'text-[#2d322d]'}`}
                                 onClick={() => { setCityFilter(''); setShowCityDropdown(false); }}
                               >
                                 Semua wilayah
@@ -309,7 +309,7 @@ function HomePage({ destinations, categories, cities }) {
                               {cities.map((c) => (
                                 <button
                                   key={c.name}
-                                  className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${cityFilter === c.name ? 'font-semibold text-[#1f3329]' : 'text-[#2d322d]'}`}
+                                  className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${cityFilter === c.name ? 'font-semibold text-[#4a4745]' : 'text-[#2d322d]'}`}
                                   onClick={() => { setCityFilter(c.name); setShowCityDropdown(false); }}
                                 >
                                   {c.name}
@@ -346,7 +346,7 @@ function HomePage({ destinations, categories, cities }) {
                               transition={{ duration: 0.2 }}
                             >
                               <button
-                                className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${!categoryFilter ? 'font-semibold text-[#1f3329]' : 'text-[#2d322d]'}`}
+                                className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${!categoryFilter ? 'font-semibold text-[#4a4745]' : 'text-[#2d322d]'}`}
                                 onClick={() => { setCategoryFilter(''); setShowCategoryDropdown(false); }}
                               >
                                 Semua kategori
@@ -354,7 +354,7 @@ function HomePage({ destinations, categories, cities }) {
                               {categories.map((c) => (
                                 <button
                                   key={c.name}
-                                  className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${categoryFilter === c.name ? 'font-semibold text-[#1f3329]' : 'text-[#2d322d]'}`}
+                                  className={`block w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-[#faf6ee] ${categoryFilter === c.name ? 'font-semibold text-[#4a4745]' : 'text-[#2d322d]'}`}
                                   onClick={() => { setCategoryFilter(c.name); setShowCategoryDropdown(false); }}
                                 >
                                   {c.name}
@@ -371,7 +371,7 @@ function HomePage({ destinations, categories, cities }) {
                           onClick={handleSubmit}
                           whileHover={hoverScaleSm}
                           whileTap={tapScale}
-                          className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-[#F6C23E] text-sm font-medium text-[#1a1f1a] shadow-lg shadow-black/10 transition-colors hover:bg-[#FFD24C] md:w-11"
+                          className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-[#76624C] text-sm font-medium text-white shadow-lg shadow-black/10 transition-colors hover:bg-[#866F56] md:w-11"
                         >
                           <FiSearch size={18} />
                           <span className="md:hidden">Cari</span>
@@ -417,10 +417,10 @@ function HomePage({ destinations, categories, cities }) {
                           disabled={!textQuery.trim() || loading}
                           whileHover={hoverScaleSm}
                           whileTap={tapScale}
-                          className="flex items-center justify-center gap-2 rounded-full bg-[#F6C23E] px-5 py-2 text-sm font-medium text-[#1a1f1a] shadow-lg shadow-black/10 transition-colors hover:bg-[#FFD24C] disabled:cursor-not-allowed disabled:opacity-50"
+                          className="flex items-center justify-center gap-2 rounded-full bg-[#76624C] px-5 py-2 text-sm font-medium text-white shadow-lg shadow-black/10 transition-colors hover:bg-[#866F56] disabled:cursor-not-allowed disabled:opacity-50"
                         >
                           {loading ? (
-                            <><span className="h-4 w-4 animate-spin rounded-full border-2 border-[#FFD24C]/40 border-t-[#F6C23E]"></span>Mencari...</>
+                            <><span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white"></span>Mencari...</>
                           ) : (
                             <>Temukan {Icons.arrow(14)}</>
                           )}

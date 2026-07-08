@@ -1,6 +1,6 @@
 /* ============================================
    PARAHYANGAN — Tourism Recommendation
-   Warm Earthy Design System
+   Warm Earthy Design System (Stone Gray + Sand)
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -22,26 +22,22 @@
   --line: #e7e0cf;
   --line-soft: #f0eadb;
 
-  /* Forest greens - tea plantations & mountains */
-  --forest: #1f3329;
-  --forest-2: #2d4a37;
-  --forest-3: #4a7459;
-  --forest-soft: #d4dfd8;
-  --forest-tint: #ecf1ed;
+  /* Abu Batu - warm neutral stone gray, lebih terang */
+  --stone: #4a4745;
+  --stone-2: #6f6b67;
+  --stone-3: #9d9995;
+  --stone-soft: #e7e6e4;
+  --stone-tint: #f3f2f1;
 
-  /* Terracotta - traditional Sundanese roof tiles */
-  --terra: #c4633e;
-  --terra-2: #a04e2e;
-  --terra-soft: #f4dccf;
+  /* Sand - aksen pasir/batu hangat, lembut */
+  --sand: #866f56;
+  --sand-2: #76624c;
+  --sand-soft: #e7e1da;
 
-  /* Gold - rice paddies at sunset */
-  --gold: #b18a3d;
-  --gold-soft: #e4d5b2;
-
-  --shadow-sm: 0 1px 2px rgba(31, 51, 41, 0.05);
-  --shadow-md: 0 6px 20px rgba(31, 51, 41, 0.08);
-  --shadow-lg: 0 16px 40px rgba(31, 51, 41, 0.12);
-  --shadow-xl: 0 32px 80px rgba(31, 51, 41, 0.18);
+  --shadow-sm: 0 1px 2px rgba(74, 71, 69, 0.05);
+  --shadow-md: 0 6px 20px rgba(74, 71, 69, 0.08);
+  --shadow-lg: 0 16px 40px rgba(74, 71, 69, 0.12);
+  --shadow-xl: 0 32px 80px rgba(74, 71, 69, 0.18);
 
   --r-sm: 8px;
   --r-md: 14px;
@@ -124,7 +120,7 @@ main {
   transition: opacity 0.2s var(--ease);
 }
 
-.hd-solid .hd-brand { color: var(--forest); }
+.hd-solid .hd-brand { color: var(--stone); }
 
 .hd-brand:hover { opacity: 0.8; }
 
@@ -134,7 +130,7 @@ main {
   justify-content: center;
   width: 38px;
   height: 38px;
-  background: var(--terra);
+  background: var(--sand);
   color: white;
   border-radius: 10px;
   flex-shrink: 0;
@@ -177,18 +173,18 @@ main {
 }
 
 .hd-solid .hd-nav a:hover {
-  color: var(--forest);
+  color: var(--stone);
   background: var(--cream-2);
 }
 
 .hd-nav a.active {
   background: rgba(255, 255, 255, 0.95);
-  color: var(--forest);
+  color: var(--stone);
   font-weight: 600;
 }
 
 .hd-solid .hd-nav a.active {
-  background: var(--forest);
+  background: var(--stone);
   color: white;
 }
 
@@ -219,7 +215,7 @@ main {
   transition: transform 0.3s var(--ease);
 }
 
-.hd-solid .hd-burger span { background: var(--forest); }
+.hd-solid .hd-burger span { background: var(--stone); }
 
 .hd-burger.open span:nth-child(1) { transform: translateY(3px) rotate(45deg); }
 .hd-burger.open span:nth-child(2) { transform: translateY(-3px) rotate(-45deg); }
@@ -251,7 +247,7 @@ main {
 }
 
 .hd-drawer a:hover { background: var(--cream-2); }
-.hd-drawer a.active { background: var(--forest); color: white; }
+.hd-drawer a.active { background: var(--stone); color: white; }
 
 /* ============================================
    HERO
@@ -268,7 +264,7 @@ main {
 .hero-title em {
   font-style: italic;
   font-weight: 400;
-  color: var(--gold-soft);
+  color: var(--sand-soft);
 }
 
 .hero-sub {
@@ -308,7 +304,7 @@ main {
   font-family: var(--font-display);
   font-size: 48px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.03em;
   line-height: 1;
 }
@@ -354,7 +350,7 @@ main {
   font-family: var(--font-display);
   font-style: italic;
   font-size: 16px;
-  color: var(--terra);
+  color: var(--sand);
   margin-bottom: 12px;
   letter-spacing: 0;
 }
@@ -365,7 +361,7 @@ main {
   font-weight: 500;
   line-height: 1.05;
   letter-spacing: -0.03em;
-  color: var(--forest);
+  color: var(--stone);
 }
 
 .sec-link {
@@ -409,7 +405,7 @@ main {
 
 .dest-card:hover {
   box-shadow: var(--shadow-lg);
-  border-color: var(--forest-3);
+  border-color: var(--stone-3);
 }
 
 .dest-card-img {
@@ -436,7 +432,7 @@ main {
   border-radius: 100px;
   font-size: 11px;
   font-weight: 600;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: 0.02em;
 }
 
@@ -448,7 +444,7 @@ main {
   font-family: var(--font-display);
   font-size: 22px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   line-height: 1.15;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
@@ -488,13 +484,13 @@ main {
   gap: 4px;
   font-size: 12.5px;
   font-weight: 600;
-  color: var(--forest);
+  color: var(--stone);
   transition: gap 0.2s;
 }
 
 .dest-card:hover .dest-card-cta {
   gap: 8px;
-  color: var(--terra);
+  color: var(--sand);
 }
 
 /* ============================================
@@ -523,12 +519,12 @@ main {
 .cat-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(31, 51, 41, 0.1) 0%, rgba(31, 51, 41, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(74, 71, 69, 0.1) 0%, rgba(74, 71, 69, 0.85) 100%);
   transition: opacity 0.3s;
 }
 
 .cat-tile:hover .cat-overlay {
-  background: linear-gradient(180deg, rgba(31, 51, 41, 0.2) 0%, rgba(31, 51, 41, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(74, 71, 69, 0.2) 0%, rgba(74, 71, 69, 0.9) 100%);
 }
 
 .cat-content {
@@ -558,7 +554,7 @@ main {
   transition: gap 0.2s;
 }
 
-.cat-tile:hover .cat-content span { gap: 10px; color: var(--gold-soft); }
+.cat-tile:hover .cat-content span { gap: 10px; color: var(--sand-soft); }
 
 /* ============================================
    HOW IT WORKS
@@ -581,7 +577,7 @@ main {
   font-style: italic;
   font-size: 56px;
   font-weight: 400;
-  color: var(--terra);
+  color: var(--sand);
   letter-spacing: -0.04em;
   line-height: 1;
   margin-bottom: 20px;
@@ -591,7 +587,7 @@ main {
   font-family: var(--font-display);
   font-size: 26px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   margin-bottom: 12px;
   letter-spacing: -0.02em;
 }
@@ -613,7 +609,7 @@ main {
 }
 
 .pg-head {
-  background: var(--forest);
+  background: var(--stone);
   color: white;
   padding: 80px 32px 100px;
   text-align: center;
@@ -624,7 +620,7 @@ main {
   margin: 0 auto;
 }
 
-.pg-head .sec-eyebrow { color: var(--gold-soft); }
+.pg-head .sec-eyebrow { color: var(--sand-soft); }
 
 .pg-head h1 {
   font-family: var(--font-display);
@@ -716,14 +712,14 @@ main {
 }
 
 .pg-count strong {
-  color: var(--forest);
+  color: var(--stone);
   font-weight: 600;
 }
 
 .pg-clear {
   padding: 5px 14px;
-  background: var(--terra-soft);
-  color: var(--terra-2);
+  background: var(--sand-soft);
+  color: var(--sand-2);
   border: none;
   border-radius: 100px;
   font-size: 12px;
@@ -734,7 +730,7 @@ main {
 }
 
 .pg-clear:hover {
-  background: var(--terra);
+  background: var(--sand);
   color: white;
 }
 
@@ -754,7 +750,7 @@ main {
 
 .pg-empty button {
   padding: 12px 24px;
-  background: var(--forest);
+  background: var(--stone);
   color: white;
   border: none;
   border-radius: 100px;
@@ -794,7 +790,7 @@ main {
   font-style: italic;
   font-size: 80px;
   font-weight: 400;
-  color: var(--terra);
+  color: var(--sand);
   line-height: 1;
   letter-spacing: -0.04em;
 }
@@ -803,7 +799,7 @@ main {
   font-family: var(--font-display);
   font-size: 32px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.02em;
   margin-bottom: 14px;
 }
@@ -816,7 +812,7 @@ main {
 }
 
 .about-step p em {
-  color: var(--forest);
+  color: var(--stone);
   font-style: italic;
   font-weight: 500;
 }
@@ -854,7 +850,7 @@ main {
   font-family: var(--font-display);
   font-size: 22px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   margin-bottom: 12px;
   letter-spacing: -0.02em;
 }
@@ -896,7 +892,7 @@ main {
 .dp-notfound h1 {
   font-family: var(--font-display);
   font-size: 36px;
-  color: var(--forest);
+  color: var(--stone);
   margin-bottom: 12px;
 }
 
@@ -906,7 +902,7 @@ main {
 
 .dp-notfound button {
   padding: 12px 24px;
-  background: var(--forest);
+  background: var(--stone);
   color: white;
   border: none;
   border-radius: 100px;
@@ -919,7 +915,7 @@ main {
   width: 36px;
   height: 36px;
   border: 3px solid var(--cream-3);
-  border-top-color: var(--terra);
+  border-top-color: var(--sand);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -950,9 +946,9 @@ main {
 }
 
 .dp-back:hover {
-  background: var(--forest);
+  background: var(--stone);
   color: white;
-  border-color: var(--forest);
+  border-color: var(--stone);
 }
 
 .dp-eyebrow {
@@ -966,8 +962,8 @@ main {
 .dp-cat {
   display: inline-block;
   padding: 6px 14px;
-  background: var(--terra-soft);
-  color: var(--terra-2);
+  background: var(--sand-soft);
+  color: var(--sand-2);
   border-radius: 100px;
   font-size: 11.5px;
   font-weight: 700;
@@ -989,7 +985,7 @@ main {
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: -0.03em;
-  color: var(--forest);
+  color: var(--stone);
   margin: 0 0 28px;
   max-width: 880px;
 }
@@ -998,7 +994,7 @@ main {
 .dp-rule {
   width: 64px;
   height: 2px;
-  background: var(--terra);
+  background: var(--sand);
   margin: 0 0 28px;
   border-radius: 2px;
 }
@@ -1025,7 +1021,7 @@ main {
   font-family: var(--font-display);
   font-size: 1.4em;
   font-weight: 500;
-  color: var(--terra);
+  color: var(--sand);
   line-height: 0;
   opacity: 0.85;
   margin: 0 4px;
@@ -1062,7 +1058,7 @@ main {
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -0.015em;
-  color: var(--forest);
+  color: var(--stone);
   margin: 0;
   text-wrap: balance;
 }
@@ -1073,7 +1069,7 @@ main {
   font-family: var(--font-display);
   font-size: 64px;
   font-weight: 500;
-  color: var(--terra);
+  color: var(--sand);
   line-height: 0;
   vertical-align: -0.45em;
   margin: 0 8px;
@@ -1103,7 +1099,7 @@ main {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  color: var(--forest);
+  color: var(--stone);
   margin: 0 0 8px;
 }
 
@@ -1134,7 +1130,7 @@ main {
 }
 
 .dp-activity:hover {
-  border-color: var(--terra);
+  border-color: var(--sand);
   box-shadow: var(--shadow-md);
 }
 
@@ -1144,16 +1140,16 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--terra-soft);
+  background: var(--sand-soft);
   border-radius: 14px;
-  color: var(--terra-2);
+  color: var(--sand-2);
 }
 
 .dp-activity-body h3 {
   font-family: var(--font-display);
   font-size: 19px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.015em;
   margin: 0 0 6px;
   line-height: 1.25;
@@ -1187,17 +1183,17 @@ main {
   margin-top: 14px;
   padding: 10px 18px;
   background: transparent;
-  border: 1px solid var(--forest);
+  border: 1px solid var(--stone);
   border-radius: 100px;
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--forest);
+  color: var(--stone);
   text-decoration: none;
   transition: all 0.2s var(--ease);
 }
 
 .dp-map-link:hover {
-  background: var(--forest);
+  background: var(--stone);
   color: white;
   transform: translateY(-1px);
 }
@@ -1220,7 +1216,7 @@ main {
   font-family: var(--font-display);
   font-style: italic;
   font-size: 16px;
-  color: var(--terra);
+  color: var(--sand);
   margin-bottom: 10px;
 }
 
@@ -1230,7 +1226,7 @@ main {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  color: var(--forest);
+  color: var(--stone);
   margin: 0 0 12px;
 }
 
@@ -1269,7 +1265,7 @@ main {
 }
 
 .dp-tip:hover {
-  border-color: var(--forest-3);
+  border-color: var(--stone-3);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -1279,7 +1275,7 @@ main {
   font-style: italic;
   font-size: 28px;
   font-weight: 400;
-  color: var(--terra);
+  color: var(--sand);
   line-height: 1;
   letter-spacing: -0.02em;
 }
@@ -1288,7 +1284,7 @@ main {
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.015em;
   margin: 0 0 8px;
   line-height: 1.2;
@@ -1332,7 +1328,7 @@ main {
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.015em;
   margin: 0;
 }
@@ -1364,7 +1360,7 @@ main {
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   text-align: right;
   letter-spacing: -0.01em;
 }
@@ -1374,7 +1370,7 @@ main {
   font-family: var(--font-display);
   font-size: 19px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.015em;
   margin: 0 0 6px;
 }
@@ -1409,23 +1405,23 @@ main {
 }
 
 .dp-btn-primary {
-  background: var(--terra);
+  background: var(--sand);
   color: white;
 }
 
 .dp-btn-primary:hover {
-  background: var(--terra-2);
+  background: var(--sand-2);
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(196, 99, 62, 0.3);
 }
 
 .dp-btn-ghost {
   background: var(--cream-2);
-  color: var(--forest);
+  color: var(--stone);
 }
 
 .dp-btn-ghost:hover {
-  background: var(--forest-tint);
+  background: var(--stone-tint);
 }
 
 /* Share */
@@ -1433,7 +1429,7 @@ main {
   font-family: var(--font-display);
   font-size: 17px;
   font-weight: 500;
-  color: var(--forest);
+  color: var(--stone);
   letter-spacing: -0.015em;
   margin: 0 0 14px;
 }
@@ -1460,9 +1456,9 @@ main {
 
 .dp-share-btns button:hover,
 .dp-share-btns a:hover {
-  background: var(--forest);
+  background: var(--stone);
   color: white;
-  border-color: var(--forest);
+  border-color: var(--stone);
   transform: translateY(-2px);
 }
 
@@ -1495,7 +1491,7 @@ main {
    FOOTER
    ============================================ */
 .ft {
-  background: var(--forest);
+  background: var(--stone);
   color: var(--cream-3);
   padding: 64px 32px 32px;
   margin-top: auto;
@@ -1523,7 +1519,7 @@ main {
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: var(--terra);
+  background: var(--sand);
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-[#1C3428] text-white">
+    <footer className="bg-[#4A4745] text-white">
       <div className="mx-auto max-w-6xl px-6 py-4">
 
         {/* Top */}
@@ -99,7 +99,7 @@ function Footer() {
 
             <span>
               Crafted with
-              <span className="mx-1 text-[#F6C23E]">♥</span>
+              <span className="mx-1 text-[#866F56]">♥</span>
               in Bandung
             </span>
 
